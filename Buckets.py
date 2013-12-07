@@ -1,4 +1,13 @@
 import random
+import math
+
+def random_list_with_ints(num):
+	lst = random_list(num)
+	new_list = [0] * num
+	for i in range(num):
+		new_list [i] = math.floor(lst[i] * 100)
+	return new_list	
+		
 
 # imi da o lista cu num numere random
 def random_list(num):
@@ -44,4 +53,5 @@ def count_elem_in_buckets(my_list, num_buckets):
 
 print_range_buck(6) 
 print count_elem_in_buckets(random_list(100), 6 )
+
 
