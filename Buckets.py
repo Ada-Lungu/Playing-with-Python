@@ -50,8 +50,9 @@ def count_elem_in_buckets(my_list, num_buckets):
 		elem_each_buck[i] = count_elem_in_buck( my_list, low, high)
 	return elem_each_buck
 
+def __main__():
+	print_range_buck(6) 
+	print count_elem_in_buckets(random_list(100), 6 )
 
-print_range_buck(6) 
-print count_elem_in_buckets(random_list(100), 6 )
 
 
