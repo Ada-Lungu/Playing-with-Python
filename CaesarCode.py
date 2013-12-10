@@ -1,4 +1,4 @@
-__author__ = 'ada'
+__author__ = 'mircea'
 
 
 class CaesarCode:
