@@ -100,7 +100,6 @@ class Player():
         else:
             print "No more cards in the deck!"
 
-
     #obj.print() -> are nevoie de existentza metodei ... print()
     #print obj -> are nevoie de existentza metodei __str__
 
@@ -144,7 +143,7 @@ class SimpleGame(Game):
                     print "Player " + str(self.p2.player_name) + " won " + str(self.p1.score) + " points\n"
                 else:
                     print self.p1.player_name + " 's " + str(top_card_p1) + " = " + self.p2.player_name + " 's " + str(top_card_p2)
-                    print "Egalitate.\n"
+                    print "Egalitate!\n"
 
             if self.p1.score > self.p2.score:
                 print "\nThe BIG winner is " + self.p1.player_name + " with " + str(self.p1.score) + " points!"
@@ -152,14 +151,6 @@ class SimpleGame(Game):
                 print "\nThe BIG winner is " + self.p2.player_name + " with " + str(self.p2.score) + " points!"
             else:
                 print "\nYou are equal;)"
-
-
-
-class SepticaGame(Game):
-    def play(self):
-        pass
-
-
 
 
 player1 = Player("Gigi")
