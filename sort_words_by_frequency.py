@@ -29,22 +29,13 @@ def frequency_categorize(frequent_words):
                 under_500.append(each_word)
             elif 500 < frequent_words.index(each_word) < 10:
                 entre_500_1000.append(each_word)
-<<<<<<< HEAD:sort_words_by frequency.py
                 top_frequency["500-1000"] = str(entre_500_1000)
             elif frequent_words.index(each_word) > 1000:
                 over_1000.append(each_word)
                 top_frequency["over 1000"] = str(over_1000)
             else:
                 print "No frequency for this one."
-=======
-            else:
-                over_1000.append(each_word)
 
-    top_frequency["Top 5"] = under_500
-    top_frequency["5-10"] = entre_500_1000
-    top_frequency["over 10"] = over_1000
-
->>>>>>> b91d92e31edc893fb8fcfecb19acbbe62728cbd0:sort_words_by_frequency.py
     return top_frequency
 
 
@@ -52,7 +43,7 @@ frequent_words = ['de', 'la', 'et', 'les', 'des', 'en', 'un', 'du', 'dans', 'pou
 print frequency_categorize(frequent_words)
 
 
-# gives the position of a word
+# the position of a word
 
 top1000frtxt=open("top10000fr.txt", "r")
 all_words = top1000frtxt.readlines() #slow
