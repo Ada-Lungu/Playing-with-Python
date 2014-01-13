@@ -8,10 +8,13 @@ for each_word in all_words:
 
 
 def importance_range(the_word, frequency_list):
-    position = frequency_list.index(the_word)
-    return (position // 1500) + 1
+    if the_word in frequency_list:
+        position = frequency_list.index(the_word)
+        return (position // 1500) + 1
+    else:
+        return 7
 
-print importance_range("jambes", all_words_without_space)
+print importance_range("jamdbes", all_words_without_space)
 
 
 # alte variante de rezolvare
