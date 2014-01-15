@@ -1,5 +1,4 @@
-# gives a list of the words and their frequencies
-
+# gives a list of the words and their frequencies: [[du,1], [le,2], [aux,3]]
 def list_of_word_frequency2(freq_list):
     final_list = []
     position_word = 0
@@ -8,11 +7,24 @@ def list_of_word_frequency2(freq_list):
             new_list = []
             new_list.append(each_word)
             new_list.append(position_word)
-            final_list.append(new_list) # [[1,2],[]]
+            final_list.append(new_list)
+
     return final_list
 
+
+# sorts alphabetically the created list of frequencies
+def bubble_sort_alphabetically(my_list):
+    not_sorted_yet = True
+    while not_sorted_yet:
+        not_sorted_yet = False # ==> sorted
+        for i in range(0, len(my_list)-1):
+            j = i + 1
+            if my_list[i][0] > my_list[j][0]:
+                my_list[i], my_list[j] = my_list[j], my_list[i]
+                not_sorted_yet = True
+    return my_list
+
 # [[du,1], [le,2], [aux,3]] gives the frequency of a word given
-# it works just for some of the words in the list, the second part of the list - ?
 def binary_search(freq_list, the_word):
     left = 0
     right = len(freq_list)-1
@@ -42,4 +54,6 @@ for each in french_freq_list:
 clear_list = ["de", "du", "aux", "bi", "retro", "fix"]
 
 print list_of_word_frequency2(clear_list)
-print binary_search(list_of_word_frequency2(clear_list), "de")
+print bubble_sort_alphabetically(list_of_word_frequency2(clear_list))
+print binary_search(bubble_sort_alphabetically(list_of_word_frequency2(clear_list)), "retro")
+
