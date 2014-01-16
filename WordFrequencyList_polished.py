@@ -24,6 +24,7 @@ def bubble_sort_alphabetically(my_list):
                 not_sorted_yet = True
     return my_list
 
+
 # [[du,1], [le,2], [aux,3]] gives the frequency of a word given
 def binary_search(freq_list, the_word):
     left = 0
@@ -43,17 +44,37 @@ def binary_search(freq_list, the_word):
             middle = (left + right) // 2
     return -1, counter_searches
 
-"""f = open("top10000fr.txt", "r")
+
+f = open("top10000fr.txt", "r")
 french_freq_list = f.readlines()
 f.close()
 clear_list = []
 for each in french_freq_list:
     clear_word = each[:-1]
-    clear_list.append(clear_word)"""
-
-clear_list = ["de", "du", "aux", "bi", "retro", "fix"]
+    clear_list.append(clear_word)
 
 print list_of_word_frequency2(clear_list)
-print bubble_sort_alphabetically(list_of_word_frequency2(clear_list))
-print binary_search(bubble_sort_alphabetically(list_of_word_frequency2(clear_list)), "retro")
+list_not_alphabet = list_of_word_frequency2(clear_list) # Cum pot eficientiza ca timp, sa nu imi calculeze inca o data cand calc timpul???
+print bubble_sort_alphabetically(list_not_alphabet)
+list_alphabet_sorted = bubble_sort_alphabetically(list_not_alphabet)
+print binary_search(list_alphabet_sorted, "que")
+
+import time
+start = time.clock()
+list_of_word_frequency2(clear_list)
+end = time.clock()
+print "method 1: %2gs" % (end-start)
+
+start = time.clock()
+bubble_sort_alphabetically(list_not_alphabet)
+end = time.clock()
+print "method 2: %2gs" % (end-start)
+
+
+start = time.clock()
+binary_search(list_alphabet_sorted, "que")
+end = time.clock()
+print "method 3: %.2gs" % (end-start)
+
+
 
