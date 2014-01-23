@@ -23,9 +23,6 @@ def merge_arrays(left_array, right_array):
             j += 1
     return my_array
 
-# left_array = [2, 5, 7, 9]
-# right_array = [1, 3, 8, 11]
-# print merge_arrays(left_array, right_array)
 
 # always returns an array which is sorted...
 def split_and_merge_array(my_array):
@@ -34,7 +31,7 @@ def split_and_merge_array(my_array):
     right_array = []
 
     if len(my_array) < 2: # an array with one element, is ... sorted!
-        return my_array
+        return my_array # asta nu inteleg - ce returneaza
     else:
         #split
         for i in range(0, middle_array):
@@ -47,7 +44,14 @@ def split_and_merge_array(my_array):
     #merge...
     return merge_arrays(left_sorted_array, right_sorted_array)
 
-print split_and_merge_array([10,20,4,1,4,2,8])
+
+left_array = [2, 5, 7, 9]
+right_array = [1, 3, 7, 8, 11, 9]
+
+
+print merge_arrays(left_array, right_array)
+
+"""print split_and_merge_array([10,20,4,1,4,2,8])
 
 print split_and_merge_array([])
-print split_and_merge_array([-1])
+print split_and_merge_array([-1])"""
