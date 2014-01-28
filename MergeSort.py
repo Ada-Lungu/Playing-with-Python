@@ -50,6 +50,8 @@ right_array = [1, 3, 7, 8, 11, 9]
 
 
 print merge_arrays(left_array, right_array)
+print merge_arrays([2],[4])
+
 
 """print split_and_merge_array([10,20,4,1,4,2,8])
 

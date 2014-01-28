@@ -1,4 +1,6 @@
 # gives a list of the words and their frequencies: [[du,1], [le,2], [aux,3]]
+
+
 def list_of_word_frequency2(freq_list):
     final_list = []
     position_word = 0

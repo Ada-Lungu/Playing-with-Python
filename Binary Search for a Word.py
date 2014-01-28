@@ -1,5 +1,19 @@
+"""class FreqList: # we create a class and a new type BS
 
-def binary_search (freq_list, the_word):
+    freq_list = BinarySearch() # cream un obiect de tip Binary Search (process named instantiation)==> objects or instances of class BS
+    # a function like BinarySearch() that creates a new object is a Constructor
+    freq_list.left = 0  # left is an attribute to object BS
+    freq_list.right = len(freq_list)-1
+    freq_list.middle = len(freq_list)//2"""
+
+
+    def __init__(self, left, right, middle):
+
+        self.left = left # left is an attribute to object BS
+        self.right = right
+        freq_list.middle = len(freq_list)//2
+
+def binary_search(freq_list, the_word):
 
     left = 0
     right = len(freq_list)-1
