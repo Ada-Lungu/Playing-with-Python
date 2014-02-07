@@ -34,7 +34,6 @@ def extract_shorter_relevant_example(text, my_word):
         list_final_text = final_text.split()
         return nr_words, len(list_final_text), final_text
 
-
 text_1 = "once one is at level b1 he is already brave enough to start reading texts in the target language. however, he will still encounter word that he does not understand quite often. thus, he theoretically could start reading literature on the target language, but practically, it is so annoying to constantly search for words will be so boring as to completely repel him. "
 word_1 = "encounter"
 
@@ -47,5 +46,13 @@ word_2 = "what"
 print extract_shorter_relevant_example(text_1, word_1)
 print extract_shorter_relevant_example(text_3, word_3)
 print extract_shorter_relevant_example(text_2, word_2)
+
+mircea_text = ""
+for i in range(0,60):
+    mircea_text += "w"+str(i)+" "
+print "\nmircea's test 1... searching for w3"
+print extract_shorter_relevant_example(mircea_text, "w3")
+print "\nmircea's test 3... searching for w52"
+print extract_shorter_relevant_example(mircea_text, "w52")
 
 
