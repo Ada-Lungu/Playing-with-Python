@@ -47,8 +47,8 @@ mircea_text = ""
 for i in range(0,60):
     mircea_text += "w"+str(i)+" "
 print "\nmircea's test 1... searching for w3"
-print extract_shorter_relevant_example(mircea_text, "w3")
+print shorten_word_context(mircea_text, "w3", 40)
 print "\nmircea's test 3... searching for w52"
-print extract_shorter_relevant_example(mircea_text, "w52")
+print shorten_word_context(mircea_text, "w52", 42)
 
 
