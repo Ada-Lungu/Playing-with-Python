@@ -1,18 +1,18 @@
 
 def generate_quiz(text, word):
 
-    list_text_up_to_word = []
-    list_text_after_word = []
-    list_of_text = text.split() 
+    words_up_to_word = []
+    words_after_word = []
+    text_split = text.split()
     missing_word = ""
 
-    for i in range(0, list_of_text.index(word)):
-        list_text_up_to_word.append(list_of_text[i])
-    text_up_to_word = ' '.join(list_text_up_to_word)
+    for i in range(0, text_split.index(word)):
+        words_up_to_word.append(text_split[i])
+    text_up_to_word = ' '.join(words_up_to_word)
 
-    for j in range(list_of_text.index(word)+1, len(list_of_text)):
-        list_text_after_word.append(list_of_text[j])
-    text_after_word = ' '.join(list_text_after_word)
+    for j in range(text_split.index(word)+1, len(text_split)):
+        words_after_word.append(text_split[j])
+    text_after_word = ' '.join(words_after_word)
 
     for i in range(0, len(word)):
         missing_word += "."
