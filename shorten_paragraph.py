@@ -6,7 +6,11 @@
 
 def shorten_word_context(text, given_word, max_length):
     final_text = ""
+
     forty_list=[]
+    # ML: text split gives me a list of words
+    # so you can just call that list... "words"
+    # or if you insist... "list of words"
     list_of_text = text.split() # ==> gives me a list of the words ["these", "types", ",", "the"]
     word_count = len(list_of_text)
 

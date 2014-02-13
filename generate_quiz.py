@@ -1,4 +1,6 @@
 
+# ML: this is almost perfect. 
+# perfection would have been if text_split was simply named "words"
 def generate_quiz(text, word):
 
     words_up_to_word = []
