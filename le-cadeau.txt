@@ -3,7 +3,7 @@ Pour decouvrir le cadeau, utilizes le following algorithm: chacque numero repres
 9100
 696
 4866
-185
+35
 3101
 1106
 20
@@ -15,7 +15,7 @@ Pour decouvrir le cadeau, utilizes le following algorithm: chacque numero repres
 2
 3905
 9
-166
+64
 3564
 16
 2552
