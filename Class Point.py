@@ -11,3 +11,4 @@
   	blanck.y = 4.0 		# we add new data to an instance by using "Attributes" - using "." notation
 
 print blanck
+

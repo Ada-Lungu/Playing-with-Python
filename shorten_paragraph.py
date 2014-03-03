@@ -51,14 +51,10 @@ mircea_text = ""
 for i in range(0,60):
     mircea_text += "w"+str(i)+" "
 print "\nmircea's test 1... searching for w3"
-<<<<<<< HEAD
-print shorten_word_context((mircea_text, "w3")
-print "\nmircea's test 3... searching for w52"
-print shorten_word_context(mircea_text, "w52")
-=======
+
+
 print shorten_word_context(mircea_text, "w3", 40)
 print "\nmircea's test 3... searching for w52"
 print shorten_word_context(mircea_text, "w52", 42)
->>>>>>> 2cf6c18ac76e0393f28cf7f297717392cfca96cf
 
 
