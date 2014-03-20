@@ -49,7 +49,6 @@ def word_count2(text):
             words_occurrencies[each_word] += 1
     return words_occurrencies
 
-
 """f = open("machiavelli.txt","r")
 machiavelli_text = f.readlines() # gives a list with the text lines
 f.close()
