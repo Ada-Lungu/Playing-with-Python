@@ -38,8 +38,9 @@ print word_count(file_text)
 
 def word_count2(text):
 
-    words_text = text.split()
     words_occurrencies = {}
+    list_words = []
+    words_text = text.split()
 
     for each_word in words_text: # take each word from the list and insert it in the dictionary with the proper number value
         if each_word not in words_occurrencies:
@@ -47,19 +48,38 @@ def word_count2(text):
                 words_occurrencies[each_word] = 1
         else:
             words_occurrencies[each_word] += 1
-    return words_occurrencies
 
-"""f = open("machiavelli.txt","r")
-machiavelli_text = f.readlines() # gives a list with the text lines
+    # verific value al cuvantului din lista in dict, si il pun in lista pe pozitia respectiva
+
+    """for each_pair in words_occurrencies:
+        list_values.insert(words_occurrencies[each_word],key)"""
+
+
+    for each_word in sorted(words_occurrencies, key=words_occurrencies.get, reverse=True):
+        list_words.append(each_word)
+
+    return words_occurrencies, list_words
+
+f = open("machiavelli.txt","r")
+machiavelli_text = f.read() # f.read - gives a string with the text lines
+words_machiavelli_text = machiavelli_text.split()
+clear_text = ""
+for each_char in words_machiavelli_text:
+    if each_char.isalpha():
+        clear_text += each_char
 f.close()
-print word_count2(machiavelli_text
-"""
+
+print word_count2(clear_text)
 
 
-file_text= "Ce sa mai ce sa zicem ce sa mai povestim ce cum sa judecam"
-print word_count2(file_text)
 
 
+# !!! nu pot modifica un string
+
+# sortez cuvintele in ordinea frecventei => lista
+
+# elimin punctuatia/ din text string
+# elimin articlolele
 
 
 
