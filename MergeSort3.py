@@ -1,4 +1,6 @@
 
+# interpolates two sorted lists
+#  e.g. merge_list([1,3,5], [2,4,6])=[1,2,3,4,5,6]
 def merge_list(first_half, second_half):
     i = 0
     j = 0
@@ -6,10 +8,13 @@ def merge_list(first_half, second_half):
 
     # if merged_list < len(unsorted_list): - credeam ca fac merge aici pana cand am array-ul la lungimea initiala
 
-    while i <= len(first_half) and j <= len(second_half):
+    # while not at the end of any of the two lists, always pick the lowest and add it to the result list
+    while i < len(first_half) or j < len(second_half):
+        # finished first half already
         if (i == len(first_half)):
             merged_list.append(second_half[j])
             j += 1
+        # finished second array
         elif (j == len(second_half)):
             merged_list.append(first_half[i])
             i += 1
@@ -18,6 +23,8 @@ def merge_list(first_half, second_half):
             i += 1
         elif (second_half[j] <= first_half[i]):
             merged_list.append(second_half[j])
+            j+=1
+    # now add all the other elements in the unfinished list
 
     return merged_list
 
@@ -43,11 +50,10 @@ def split_and_merge(unsorted_list):
     return merge_list(first_sorted_half, second_sorted_half)
 
 
+right_array = [5, 7, 11, 2, 5, 7]
 
-left_array = [2, 5, 7, 9]
-right_array = [1, 3, 7, 8, 11, 9]
+print split_and_merge(right_array)
 
-print merge_list(left_array, right_array)
 
 
 
