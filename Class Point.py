@@ -1,14 +1,34 @@
 
- class Point()
+class Point():
 
-  	blanck = Point()  # by creating a new class, we create a new type - this case Point; the members of the class are of Point type; 
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
 
-  	# creating new members = instances/objects of that class - we call this process instantiation
-  	# to instantiate a new Point object, we call the function Point ==> the variable "blanck" is assigned a reference to a new POint object
-  	# a function like Point() that instantiate a new object is called a constructor
+class Triangle():
+    # a
+    def __init__(self, a,b,c):
+        # assert(isinstance(a, Point))
+        self.a = a
+        self.b = b
+        self.c = c
 
-  	blanck.x = 3.0
-  	blanck.y = 4.0 		# we add new data to an instance by using "Attributes" - using "." notation
+myPoints = [[-100,-50],[0,100],[100,-50]]
+assert (myPoints[0][0] == -100)
+assert (myPoints[0][1] == -50)
 
-print blanck
+points = [ Point (-100,50) , Point (100,50), Point (0,-100)]
+assert (points[0].x == -100)
+assert (points[0].y  == 50)
+
+
+triangle = Triangle(Point(-100,-50), Point (100,50), Point (0,-100))
+assert (triangle.a.x == -100)
+assert (triangle.a.y == -50)
+
+
+triangle = Triangle([-100,-50],[0,100],[100,-50])
+assert (triangle.a[0] == -100)
+assert (triangle.a[1] == -50)
+
 
