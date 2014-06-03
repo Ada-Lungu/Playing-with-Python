@@ -17,7 +17,7 @@ myPoints = [[-100,-50],[0,100],[100,-50]]
 assert (myPoints[0][0] == -100)
 assert (myPoints[0][1] == -50)
 
-points = [ Point (-100,50) , Point (100,50), Point (0,-100)]
+points = [ Point (-100,50), Point (100,50), Point (0,-100)]
 assert (points[0].x == -100)
 assert (points[0].y  == 50)
 
