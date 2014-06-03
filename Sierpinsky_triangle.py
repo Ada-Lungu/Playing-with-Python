@@ -41,21 +41,21 @@ def draw_triangle(triangle, color, my_turtle):
 
 
 def get_mid(point1, point2):
-    return ((point1.x + point2.x)/2,(point1.y + point2.y)/2)
+    return Point((point1.x + point2.x)/2,(point1.y + point2.y)/2)
 
 
-def sierpinski_triangle(triangle,  degree, my_turtle):
+def sierpinski_triangle(triangle, degree, my_turtle):
 # degree = number of times I want to make the recursion => the triangle be splitted
     colors = ['blue','red','green','white','yellow',
                 'violet','orange']
     draw_triangle(triangle, colors[degree], my_turtle)
 
     if degree > 0:
-        sierpinski_triangle([triangle.a, get_mid(triangle.a, triangle.b), get_mid(triangle.a, triangle.c)],
+        sierpinski_triangle(Triangle(triangle.a, get_mid(triangle.a, triangle.b), get_mid(triangle.a, triangle.c)),
                             degree-1, my_turtle)
-        sierpinski_triangle([triangle.b, get_mid(triangle.b, triangle.c), get_mid(triangle.b, triangle.a)],
+        sierpinski_triangle(Triangle(triangle.b, get_mid(triangle.b, triangle.c), get_mid(triangle.b, triangle.a)),
                             degree-1, my_turtle)
-        sierpinski_triangle([triangle.c, get_mid(triangle.c, triangle.a), get_mid(triangle.b, triangle.c)],
+        sierpinski_triangle(Triangle(triangle.c, get_mid(triangle.c, triangle.a), get_mid(triangle.b, triangle.c)),
                             degree-1, my_turtle)
 
 
@@ -63,9 +63,10 @@ def main():
    myTurtle = turtle.Turtle()
    myWin = turtle.Screen()
 
-   triangle = Triangle(Point(-100,-50),Point(0,100),Point(100,-50))
+   # triangle = Triangle(Point(-100,-50),Point(0,100),Point(100,-50))
+   triangle = Triangle(Point(-200,-10),Point(0,200),Point(200,-100))
 
-   sierpinski_triangle(triangle,3,myTurtle)
+   sierpinski_triangle(triangle,6,myTurtle)
    myWin.exitonclick()
 
 main()
