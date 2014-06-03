@@ -82,7 +82,9 @@ class Graph:
 
 # methods add_vertex
 
+    # expects a string and constructs a vertex on its own!!!
     def add_vertex(self, info):
+        assert(isinstance(info, str))
         self.num_vertices += 1
         new_vertex = Vertex(info)
         self.vertices[info] = new_vertex
@@ -96,7 +98,7 @@ class Graph:
         info_from.add_neighbour(info_to, weight)
 
     def get_vertices(self):
-        return self.vertices.keys()
+        return self.vertices.values()
 
 
 
@@ -128,8 +130,6 @@ assert (vertex0.get_weight(vertex1) == 5)
 
 assert (vertex0.shortest_path(vertex1) == 5)
 assert (vertex0.shortest_path(vertex2) == 3)
-
-
 
 
 
@@ -165,12 +165,6 @@ orash5.add_neighbour(orash6, 500)
 orash5.id = "Victoria"
 assert(orash5.id == "Victoria")
 
-
-distante_orase = Graph()
-
-orase_list = [orash1, orash2]
-for orash in orase_list:
-    distante_orase.add_vertex(orash)
 
 assert (orash1.is_path(orash2))
 assert (not orash2.is_path(orash1))
