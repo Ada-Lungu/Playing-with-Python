@@ -46,8 +46,8 @@ def build_word_graph_bucket():
             four_word_graph.add_vertex(word) # actually a list with the vertices; the vertices: id + neighbours   [[v1_id, [n1,n2,n3]], [v2_id, [n2, n3]],] or  [[v1, {n1:3,n2:4,n3:5}, etc ]
 
 # create a dictionary with buckets and words
-    for word_vertex in four_word_graph:
-        for each_letter in len(word_vertex.id): # poop
+    for word_vertex in four_word_graph.get_vertices():
+        for each_letter in range(len(word_vertex.id)): # poop
             bucket = word_vertex.id[:each_letter] + "_" + word_vertex.id[(each_letter+1):]
             # if the bucket exists
             if bucket in bucket_words_dict:
@@ -66,7 +66,6 @@ def build_word_graph_bucket():
                     four_word_graph.add_edge(each_value, next_value)
 
     return four_word_graph
-
 
 
 
