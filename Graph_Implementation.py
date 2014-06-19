@@ -7,7 +7,7 @@ class Heap:
 
 class Vertex:
 
-    def __init__(self, id):
+    def __init__(self, id):  #[v_id, {}]  Vertex(id, )
         self.id = id
         self.neighbours = {} # {neighbour: weight}
 
@@ -21,7 +21,7 @@ class Vertex:
         self.add_neighbour(neighbour, weight)
         neighbour.add_neighbour(self, weight)
 
-    def get_connections(self):
+    def get_neighbours_vertices(self):
         return self.neighbours.keys() # returns a list with the vertexes to which the key is connected
 
     def get_info(self):
@@ -46,7 +46,7 @@ class Vertex:
         if vertex in self.neighbours:
             return self.get_weight(vertex)
         else:
-            for n in self.get_connections():
+            for n in self.get_neighbours_vertices():
                 dist_via_n = self.get_weight(n) + n.shortest_path(vertex)
                 if dist_via_n < min_dist:
                     min_dist = dist_via_n
@@ -74,32 +74,60 @@ class Vertex:
 
 
 
-
 class Graph:
     def __init__(self):
-        self.vertices = {}
+        self.vertices = {} # (vertex_name: vertex)
         self.num_vertices = 0
 
 # methods add_vertex
 
     # expects a string and constructs a vertex on its own!!!
-    def add_vertex(self, info):
+    def create_and_add_vertex_from_info(self, info):
         assert(isinstance(info, str))
         self.num_vertices += 1
         new_vertex = Vertex(info)
         self.vertices[info] = new_vertex
         return new_vertex
 
+    def add_vertex_object(self, vertex):
+        self.num_vertices += 1
+        self.vertices[vertex.id] = vertex
+
     def get_vertex(self, info):
         return self.vertices[info]
 
-    def add_edge(self, info_from, info_to, weight):
-
+    def add_edge(self, info_from, info_to, weight = None):
         info_from.add_neighbour(info_to, weight)
 
     def get_vertices(self):
         return self.vertices.values()
 
+    def string_as_dot(self):
+        result = ""
+        result += "graph {\n"
+
+        # print all the nodes
+        for each in self.vertices.keys(): # just the name of the vertices <= keys
+            result += each + "\n"
+        result += "\n"
+        # print all the edges
+        for vertex in self.vertices.values(): # values: the vertex(es), the keys are the vertexes_name
+            for neighbour in vertex.get_neighbours_vertices():
+                result += vertex.id + "--" + neighbour.id + "\n"
+        result += "}"
+        return result
+
+    def print_as_dot(self):
+        print self.string_as_dot()
+
+    # saves graph to file named fileNamed
+    def save_dot_to_file(self, file_name):
+
+        dot_script_file = open(file_name, "w")
+        dot_script_file.write(self.string_as_dot())
+        dot_script_file.close()
+
+# 1000 most frequent letter words
 
 
 vertex0 = Vertex("v0")
@@ -110,7 +138,7 @@ vertex4 = Vertex("v4")
 vertex5 = Vertex("v5")
 
 assert (vertex0.id == "v0")
-assert (vertex0.get_connections() == [])
+assert (vertex0.get_neighbours_vertices() == [])
 
 vertex0.add_neighbour(vertex1, 5)
 vertex0.add_neighbour(vertex5, 2)
@@ -122,14 +150,23 @@ vertex4.add_neighbour(vertex0, 1)
 vertex5.add_neighbour(vertex4, 8)
 vertex5.add_neighbour(vertex2, 1)
 
-
-assert (vertex1 in vertex0.get_connections())
-assert (vertex5 in vertex0.get_connections())
+assert (vertex1 in vertex0.get_neighbours_vertices())
+assert (vertex5 in vertex0.get_neighbours_vertices())
 
 assert (vertex0.get_weight(vertex1) == 5)
 
 assert (vertex0.shortest_path(vertex1) == 5)
 assert (vertex0.shortest_path(vertex2) == 3)
+
+
+# g = Graph({vertex0, vertex1, vertex2}, 3)
+
+g = Graph()
+g.add_vertex_object(vertex0)
+g.add_vertex_object(vertex1)
+g.add_vertex_object(vertex2)
+
+print g.print_as_dot()
 
 
 
@@ -170,7 +207,7 @@ assert (orash1.is_path(orash2))
 assert (not orash2.is_path(orash1))
 
 
-print orash1.get_connections()
+print orash1.get_neighbours_vertices()
 print "Distanta de la Arad la Sibiu:" + str(orash1.get_weight(orash5))
 
 
