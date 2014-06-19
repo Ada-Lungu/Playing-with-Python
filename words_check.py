@@ -18,7 +18,7 @@ def is_correct(expected, answered):
         return "OK"
 
     counter = 0
-    for i in range(is_greater_word(expected, answered)): range (4) = 0, 1, 2, 3
+    for i in range(is_greater_word(expected, answered)): # range (4) = 0, 1, 2, 3
         for answ_letter in answered:
             for exp_letter in expected:
                 if answ_letter[i] != exp_letter[i]:
@@ -28,10 +28,8 @@ def is_correct(expected, answered):
     else:
         return "WRONG WORD"
 
-
     if len(expected) > len(answered) and expected[:3] == "to " and expected[3:] == answered[3:]:
         return "OK"
-
 
 
 
