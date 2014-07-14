@@ -13,7 +13,6 @@ def number_of_different_letters(one, another):
 assert (number_of_different_letters ("sage", "mage") == 1)
 
 
-
 def add_four_letter_words_to_graph(word_graph):
     file = open("/usr/share/dict/words", "r")
     for line in file:

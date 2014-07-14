@@ -1,6 +1,7 @@
 __author__ = 'ada'
 
 from Graph_Implementation import Vertex, Graph
+from pythonds.basic import Queue
 
 # read the file and take the four-lettered words
 
@@ -60,6 +61,47 @@ def create_word_ladder_graph(words):
                     ladder_words_graph.add_edge(each_vertex, next_vertex)
 
     return ladder_words_graph
+
+
+
+# breadth first search
+def create_paths_from_start_vertex (a_graph, start_vertex): # ???? a_graph
+# each vertex will have as instant values: distance, predecessor, colour => they all have the "set" and "get" methods
+# we first set these values of the start vertex
+    start_vertex.set_distance(0)
+    start_vertex.set_color("grey")
+    will_be_visited_vertexes = Queue()
+    will_be_visited_vertexes.enqueue(start_vertex)
+
+    while will_be_visited_vertexes.size() > 0:
+        curr_vertex = will_be_visited_vertexes.dequeue()
+        for neighbour_vertex in curr_vertex.get_neighbours_vertices():
+            if neighbour_vertex.get_color == "white":
+                neighbour_vertex.set_color("grey")
+                neighbour_vertex.set_pred(curr_vertex)
+                neighbour_vertex.set_distance(curr_vertex.get_distance() + 1)
+                will_be_visited_vertexes.enqueue(neighbour_vertex)
+        curr_vertex.set_color("black")
+
+# print the path from one vertex to another
+def get_path_from_vertex1_to_vertex2(vertex1, vertex 2):
+
+    print vertex2
+    print vertex2.get_pred()
+    vertex2_pred =
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 my_words = ["loop", "loot", "fine"]

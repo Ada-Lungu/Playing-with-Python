@@ -1,0 +1,243 @@
+digraph {
+shop [fillcolor = blue, style = filled];
+shot [fillcolor = blue, style = filled];
+pope [fillcolor = orange, style = filled];
+show [fillcolor = blue, style = filled];
+sage [fillcolor = red, style = filled];
+soon [fillcolor = blue, style = filled];
+four [fillcolor = blue, style = filled];
+skin [fillcolor = white, style = filled]; 
+fear [fillcolor = blue, style = filled];
+font [fillcolor = white, style = filled]; 
+fine [fillcolor = blue, style = filled];
+find [fillcolor = yellow, style = filled];
+slot [fillcolor = blue, style = filled];
+slow [fillcolor = blue, style = filled];
+flee [fillcolor = orange, style = filled];
+pump [fillcolor = white, style = filled]; 
+send [fillcolor = orange, style = filled];
+swap [fillcolor = white, style = filled]; 
+fuel [fillcolor = yellow, style = filled];
+sing [fillcolor = yellow, style = filled];
+save [fillcolor = blue, style = filled];
+pill [fillcolor = orange, style = filled];
+sent [fillcolor = yellow, style = filled];
+fool [fillcolor = red, style = filled];
+sued [fillcolor = yellow, style = filled];
+sick [fillcolor = white, style = filled]; 
+fate [fillcolor = yellow, style = filled];
+song [fillcolor = orange, style = filled];
+food [fillcolor = yellow, style = filled];
+safe [fillcolor = blue, style = filled];
+stop [fillcolor = yellow, style = filled];
+flew [fillcolor = orange, style = filled];
+sons [fillcolor = white, style = filled]; 
+five [fillcolor = orange, style = filled];
+figs [fillcolor = white, style = filled]; 
+fall [fillcolor = blue, style = filled];
+foot [fillcolor = orange, style = filled];
+span [fillcolor = yellow, style = filled];
+spur [fillcolor = blue, style = filled];
+fled [fillcolor = orange, style = filled];
+flux [fillcolor = blue, style = filled];
+sand [fillcolor = blue, style = filled];
+soft [fillcolor = white, style = filled]; 
+page [fillcolor = orange, style = filled];
+fare [fillcolor = blue, style = filled];
+shed [fillcolor = yellow, style = filled];
+says [fillcolor = white, style = filled]; 
+fair [fillcolor = yellow, style = filled];
+fish [fillcolor = blue, style = filled];
+some [fillcolor = yellow, style = filled];
+sign [fillcolor = blue, style = filled];
+past [fillcolor = blue, style = filled];
+pass [fillcolor = yellow, style = filled];
+fail [fillcolor = yellow, style = filled];
+pain [fillcolor = yellow, style = filled];
+pale [fillcolor = red, style = filled];
+port [fillcolor = blue, style = filled];
+said [fillcolor = orange, style = filled];
+sang [fillcolor = blue, style = filled];
+p.m. [fillcolor = blue, style = filled];
+fans [fillcolor = blue, style = filled];
+shut [fillcolor = white, style = filled]; 
+full [fillcolor = blue, style = filled];
+sold [fillcolor = white, style = filled]; 
+sole [fillcolor = blue, style = filled];
+free [fillcolor = white, style = filled]; 
+stem [fillcolor = yellow, style = filled];
+step [fillcolor = yellow, style = filled];
+plea [fillcolor = blue, style = filled];
+path [fillcolor = blue, style = filled];
+post [fillcolor = orange, style = filled];
+plug [fillcolor = white, style = filled]; 
+pits [fillcolor = orange, style = filled];
+side [fillcolor = yellow, style = filled];
+plus [fillcolor = white, style = filled]; 
+pick [fillcolor = orange, style = filled];
+peak [fillcolor = blue, style = filled];
+feed [fillcolor = blue, style = filled];
+pose [fillcolor = orange, style = filled];
+feel [fillcolor = blue, style = filled];
+pays [fillcolor = yellow, style = filled];
+pork [fillcolor = yellow, style = filled];
+feet [fillcolor = blue, style = filled];
+fits [fillcolor = orange, style = filled];
+pole [fillcolor = red, style = filled];
+fees [fillcolor = blue, style = filled];
+poll [fillcolor = red, style = filled];
+size [fillcolor = yellow, style = filled];
+plot [fillcolor = white, style = filled]; 
+from [fillcolor = blue, style = filled];
+puts [fillcolor = white, style = filled]; 
+fast [fillcolor = yellow, style = filled];
+sank [fillcolor = yellow, style = filled];
+suit [fillcolor = blue, style = filled];
+firm [fillcolor = blue, style = filled];
+flat [fillcolor = white, style = filled]; 
+slim [fillcolor = yellow, style = filled];
+form [fillcolor = yellow, style = filled];
+snap [fillcolor = white, style = filled]; 
+fire [fillcolor = blue, style = filled];
+park [fillcolor = orange, style = filled];
+fund [fillcolor = white, style = filled]; 
+flag [fillcolor = white, style = filled]; 
+part [fillcolor = blue, style = filled];
+seat [fillcolor = yellow, style = filled];
+spin [fillcolor = yellow, style = filled];
+pact [fillcolor = blue, style = filled];
+pull [fillcolor = blue, style = filled];
+pace [fillcolor = blue, style = filled];
+pulp [fillcolor = yellow, style = filled];
+pack [fillcolor = blue, style = filled];
+sort [fillcolor = yellow, style = filled];
+slid [fillcolor = orange, style = filled];
+sees [fillcolor = blue, style = filled];
+slip [fillcolor = orange, style = filled];
+scan [fillcolor = white, style = filled]; 
+soil [fillcolor = blue, style = filled];
+seal [fillcolor = yellow, style = filled];
+site [fillcolor = orange, style = filled];
+seed [fillcolor = blue, style = filled];
+file [fillcolor = blue, style = filled];
+seen [fillcolor = blue, style = filled];
+seem [fillcolor = blue, style = filled];
+sits [fillcolor = blue, style = filled];
+seek [fillcolor = blue, style = filled];
+ship [fillcolor = yellow, style = filled];
+film [fillcolor = orange, style = filled];
+fill [fillcolor = blue, style = filled];
+sell [fillcolor = yellow, style = filled];
+snow [fillcolor = yellow, style = filled];
+same [fillcolor = blue, style = filled];
+pure [fillcolor = white, style = filled]; 
+poor [fillcolor = white, style = filled]; 
+pink [fillcolor = white, style = filled]; 
+play [fillcolor = white, style = filled]; 
+sure [fillcolor = white, style = filled]; 
+star [fillcolor = white, style = filled]; 
+farm [fillcolor = orange, style = filled];
+sums [fillcolor = blue, style = filled];
+felt [fillcolor = yellow, style = filled];
+spot [fillcolor = yellow, style = filled];
+paid [fillcolor = orange, style = filled];
+stay [fillcolor = white, style = filled]; 
+fell [fillcolor = blue, style = filled];
+plan [fillcolor = white, style = filled]; 
+pair [fillcolor = orange, style = filled];
+such [fillcolor = blue, style = filled];
+pool [fillcolor = red, style = filled];
+flow [fillcolor = yellow, style = filled];
+sale [fillcolor = red, style = filled];
+face [fillcolor = blue, style = filled];
+pipe [fillcolor = white, style = filled]; 
+sets [fillcolor = yellow, style = filled];
+push [fillcolor = blue, style = filled];
+salt [fillcolor = white, style = filled]; 
+fact [fillcolor = orange, style = filled];
+
+shop->shot
+shop->stop
+shop->show
+shot->shut
+shot->slot
+shot->spot
+shot->show
+pope->pose
+show->slow
+show->snow
+sage->sale
+sage->same
+sage->save
+skin->spin
+font->foot
+fine->five
+fine->fire
+find->fund
+find->fine
+slot->slow
+slot->spot
+slow->snow
+flee->free
+flee->flew
+send->sent
+fuel->full
+sing->song
+pill->pull
+pill->poll
+fool->pool
+fool->foot
+song->sons
+food->foot
+food->fool
+safe->sage
+safe->save
+safe->same
+safe->sale
+flew->flow
+figs->fits
+fall->fell
+fall->full
+fail->fair
+fail->fall
+pain->pair
+pale->sale
+pale->pole
+port->sort
+port->post
+said->slid
+said->sand
+sang->sank
+sang->song
+sang->sing
+full->pull
+sold->sole
+sole->some
+stem->step
+step->stop
+plug->plus
+pits->puts
+pits->sits
+pole->pose
+pole->poll
+pole->sole
+pole->pope
+fees->sees
+fees->feet
+poll->pool
+poll->pull
+plot->slot
+fast->past
+firm->form
+slim->slip
+snap->swap
+fire->five
+fire->fir
+pace->pact
+pace->pale
+pulp->pump
+pack->park
+sets->sits
+fact->fast
+fact->pact
+}
