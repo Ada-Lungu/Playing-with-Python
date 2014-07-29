@@ -58,6 +58,10 @@ pale [fillcolor = red, style = filled];
 port [fillcolor = blue, style = filled];
 said [fillcolor = orange, style = filled];
 sang [fillcolor = blue, style = filled];
+<<<<<<< HEAD
+=======
+p.m. [fillcolor = blue, style = filled];
+>>>>>>> FETCH_HEAD
 fans [fillcolor = blue, style = filled];
 shut [fillcolor = white, style = filled]; 
 full [fillcolor = blue, style = filled];
