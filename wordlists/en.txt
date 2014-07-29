@@ -1050,6 +1050,8 @@ worked
 DEC
 M
 election
+fool
+sage
 February
 original
 Under
@@ -1193,6 +1195,10 @@ summer
 choice
 records
 risk
+cool
+poll
+pool
+pole
 resources
 manufacturing
 moving
@@ -2771,7 +2777,6 @@ calculations
 Kennedy
 element
 heating
-poll
 unusual
 Poland
 aspects
@@ -3592,7 +3597,6 @@ missile
 buffer
 Average
 diplomatic
-pool
 retain
 FDA
 principle
@@ -3808,7 +3812,6 @@ scandal
 programmer
 sit
 anywhere
-p
 explains
 talked
 Later
@@ -6239,6 +6242,7 @@ Campeau
 suburb
 retailing
 palette
+pale
 verification
 who's
 folks

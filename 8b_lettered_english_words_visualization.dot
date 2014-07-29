@@ -1,0 +1,36 @@
+digraph {
+basement [fillcolor = blue, style = filled];
+built-in [fillcolor = blue, style = filled];
+billions [fillcolor = blue, style = filled];
+battered [fillcolor = blue, style = filled];
+balanced [fillcolor = blue, style = filled];
+bacteria [fillcolor = blue, style = filled];
+breaking [fillcolor = blue, style = filled];
+bombings [fillcolor = blue, style = filled];
+boundary [fillcolor = blue, style = filled];
+borrowed [fillcolor = blue, style = filled];
+brothers [fillcolor = blue, style = filled];
+business [fillcolor = blue, style = filled];
+becoming [fillcolor = blue, style = filled];
+backbone [fillcolor = blue, style = filled];
+believed [fillcolor = red, style = filled]; 
+believed [fillcolor = blue, style = filled];
+birthday [fillcolor = blue, style = filled];
+baseball [fillcolor = blue, style = filled];
+boosting [fillcolor = blue, style = filled];
+branches [fillcolor = blue, style = filled];
+bringing [fillcolor = blue, style = filled];
+blocking [fillcolor = blue, style = filled];
+building [fillcolor = blue, style = filled];
+benefits [fillcolor = blue, style = filled];
+battling [fillcolor = blue, style = filled];
+believes [fillcolor = red, style = filled]; 
+believes [fillcolor = blue, style = filled];
+briefing [fillcolor = blue, style = filled];
+behavior [fillcolor = blue, style = filled];
+barriers [fillcolor = blue, style = filled];
+backward [fillcolor = blue, style = filled];
+bulletin [fillcolor = blue, style = filled];
+
+believed -> believes [dir = both];
+}

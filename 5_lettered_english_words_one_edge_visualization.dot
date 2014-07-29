@@ -1,0 +1,90 @@
+digraph {
+blind [fillcolor = white, style = filled]; 
+birth [fillcolor = blue, style = filled];
+buses [fillcolor = white, style = filled]; 
+being [fillcolor = white, style = filled]; 
+bound [fillcolor = blue, style = filled];
+backs [fillcolor = white, style = filled]; 
+bring [fillcolor = white, style = filled]; 
+books [fillcolor = blue, style = filled];
+booth [fillcolor = blue, style = filled];
+begun [fillcolor = yellow, style = filled];
+blank [fillcolor = white, style = filled]; 
+bones [fillcolor = orange, style = filled];
+birds [fillcolor = blue, style = filled];
+bunch [fillcolor = white, style = filled]; 
+burns [fillcolor = blue, style = filled];
+based [fillcolor = white, style = filled]; 
+built [fillcolor = white, style = filled]; 
+basis [fillcolor = orange, style = filled];
+bears [fillcolor = white, style = filled]; 
+broad [fillcolor = white, style = filled]; 
+began [fillcolor = yellow, style = filled];
+burst [fillcolor = blue, style = filled];
+brief [fillcolor = blue, style = filled];
+bench [fillcolor = yellow, style = filled];
+bases [fillcolor = orange, style = filled];
+black [fillcolor = yellow, style = filled];
+board [fillcolor = blue, style = filled];
+beams [fillcolor = white, style = filled]; 
+basic [fillcolor = yellow, style = filled];
+boats [fillcolor = blue, style = filled];
+basin [fillcolor = yellow, style = filled];
+boost [fillcolor = blue, style = filled];
+build [fillcolor = white, style = filled]; 
+badly [fillcolor = blue, style = filled];
+begin [fillcolor = yellow, style = filled];
+bonds [fillcolor = green, style = filled];
+bonus [fillcolor = green, style = filled];
+bands [fillcolor = green, style = filled];
+brand [fillcolor = blue, style = filled];
+break [fillcolor = white, style = filled]; 
+boxes [fillcolor = white, style = filled]; 
+blood [fillcolor = blue, style = filled];
+broke [fillcolor = blue, style = filled];
+buyer [fillcolor = blue, style = filled];
+blast [fillcolor = blue, style = filled];
+bread [fillcolor = yellow, style = filled];
+blame [fillcolor = white, style = filled]; 
+brown [fillcolor = blue, style = filled];
+brain [fillcolor = blue, style = filled];
+beach [fillcolor = white, style = filled]; 
+bytes [fillcolor = blue, style = filled];
+batch [fillcolor = blue, style = filled];
+below [fillcolor = blue, style = filled];
+bombs [fillcolor = blue, style = filled];
+banks [fillcolor = yellow, style = filled];
+bills [fillcolor = blue, style = filled];
+blend [fillcolor = white, style = filled]; 
+blaze [fillcolor = white, style = filled]; 
+block [fillcolor = white, style = filled]; 
+brush [fillcolor = blue, style = filled];
+
+being->bring
+backs->banks
+bones->bonus
+bones->boxes
+based->bases
+began->begin
+began->begun
+bench->bunch
+bases->basis
+bases->buses
+black->block
+black->blank
+beams->bears
+basic->basin
+basic->basis
+basin->basis
+build->built
+begin->begun
+bonds->bonus
+bonds->bones
+bands->bonds
+bands->banks
+bread->break
+bread->broad
+blame->blaze
+beach->bench
+blend->blind
+}

@@ -1,0 +1,439 @@
+graph {
+
+ shop [shape=box]; [fillcolor = 'blue', style = filled];
+ coup [shape=box]; [fillcolor = 'blue', style = filled];
+ code [shape=box]; [fillcolor = 'orange', style = filled];
+ shot [shape=box]; [fillcolor = 'blue', style = filled];
+ pope [shape=box]; [fillcolor = 'blue', style = filled];
+ show [shape=box]; [fillcolor = 'blue', style = filled];
+ sage [shape=box]; [fillcolor = 'green', style = filled];
+ soon [shape=box]; [fillcolor = 'blue', style = filled];
+ four [shape=box]; [fillcolor = 'blue', style = filled];
+ cook [shape=box]; [fillcolor = 'white', style = filled];
+ cuts [shape=box]; [fillcolor = 'white', style = filled];
+ fear [shape=box]; [fillcolor = 'blue', style = filled];
+ font [shape=box]; [fillcolor = 'white', style = filled];
+ fine [shape=box]; [fillcolor = 'blue', style = filled];
+ find [shape=box]; [fillcolor = 'yellow', style = filled];
+ slot [shape=box]; [fillcolor = 'blue', style = filled];
+ slow [shape=box]; [fillcolor = 'blue', style = filled];
+ flee [shape=box]; [fillcolor = 'orange', style = filled];
+ pump [shape=box]; [fillcolor = 'white', style = filled];
+ send [shape=box]; [fillcolor = 'orange', style = filled];
+ crew [shape=box]; [fillcolor = 'blue', style = filled];
+ swap [shape=box]; [fillcolor = 'white', style = filled];
+ fuel [shape=box]; [fillcolor = 'yellow', style = filled];
+ sing [shape=box]; [fillcolor = 'yellow', style = filled];
+ save [shape=box]; [fillcolor = 'blue', style = filled];
+ pill [shape=box]; [fillcolor = 'orange', style = filled];
+ sent [shape=box]; [fillcolor = 'orange', style = filled];
+ fool [shape=box]; [fillcolor = 'green', style = filled];
+ pact [shape=box]; [fillcolor = 'blue', style = filled];
+ sued [shape=box]; [fillcolor = 'yellow', style = filled];
+ sick [shape=box]; [fillcolor = 'white', style = filled];
+ fate [shape=box]; [fillcolor = 'yellow', style = filled];
+ song [shape=box]; [fillcolor = 'orange', style = filled];
+ food [shape=box]; [fillcolor = 'yellow', style = filled];
+ safe [shape=box]; [fillcolor = 'blue', style = filled];
+ stop [shape=box]; [fillcolor = 'yellow', style = filled];
+ flew [shape=box]; [fillcolor = 'orange', style = filled];
+ sons [shape=box]; [fillcolor = 'white', style = filled];
+ five [shape=box]; [fillcolor = 'orange', style = filled];
+ figs [shape=box]; [fillcolor = 'white', style = filled];
+ fall [shape=box]; [fillcolor = 'blue', style = filled];
+ foot [shape=box]; [fillcolor = 'orange', style = filled];
+ span [shape=box]; [fillcolor = 'yellow', style = filled];
+ spur [shape=box]; [fillcolor = 'blue', style = filled];
+ fled [shape=box]; [fillcolor = 'orange', style = filled];
+ cool [shape=box]; [fillcolor = 'blue', style = filled];
+ cold [shape=box]; [fillcolor = 'white', style = filled];
+ flux [shape=box]; [fillcolor = 'blue', style = filled];
+ sand [shape=box]; [fillcolor = 'blue', style = filled];
+ soft [shape=box]; [fillcolor = 'white', style = filled];
+ page [shape=box]; [fillcolor = 'green', style = filled];
+ fare [shape=box]; [fillcolor = 'blue', style = filled];
+ shed [shape=box]; [fillcolor = 'yellow', style = filled];
+ says [shape=box]; [fillcolor = 'white', style = filled];
+ fair [shape=box]; [fillcolor = 'yellow', style = filled];
+ fish [shape=box]; [fillcolor = 'blue', style = filled];
+ skin [shape=box]; [fillcolor = 'white', style = filled];
+ some [shape=box]; [fillcolor = 'orange', style = filled];
+ crop [shape=box]; [fillcolor = 'blue', style = filled];
+ sign [shape=box]; [fillcolor = 'blue', style = filled];
+ past [shape=box]; [fillcolor = 'blue', style = filled];
+ cost [shape=box]; [fillcolor = 'yellow', style = filled];
+ pass [shape=box]; [fillcolor = 'yellow', style = filled];
+ fail [shape=box]; [fillcolor = 'yellow', style = filled];
+ pain [shape=box]; [fillcolor = 'yellow', style = filled];
+ pale [shape=box]; [fillcolor = 'green', style = filled];
+ port [shape=box]; [fillcolor = 'blue', style = filled];
+ said [shape=box]; [fillcolor = 'orange', style = filled];
+ cast [shape=box]; [fillcolor = 'blue', style = filled];
+ p.m. [shape=box]; [fillcolor = 'blue', style = filled];
+ cell [shape=box]; [fillcolor = 'orange', style = filled];
+ fans [shape=box]; [fillcolor = 'white', style = filled];
+ corn [shape=box]; [fillcolor = 'white', style = filled];
+ core [shape=box]; [fillcolor = 'blue', style = filled];
+ shut [shape=box]; [fillcolor = 'white', style = filled];
+ full [shape=box]; [fillcolor = 'blue', style = filled];
+ plot [shape=box]; [fillcolor = 'white', style = filled];
+ cars [shape=box]; [fillcolor = 'orange', style = filled];
+ sold [shape=box]; [fillcolor = 'yellow', style = filled];
+ sole [shape=box]; [fillcolor = 'blue', style = filled];
+ free [shape=box]; [fillcolor = 'white', style = filled];
+ stem [shape=box]; [fillcolor = 'yellow', style = filled];
+ step [shape=box]; [fillcolor = 'yellow', style = filled];
+ plea [shape=box]; [fillcolor = 'blue', style = filled];
+ path [shape=box]; [fillcolor = 'blue', style = filled];
+ post [shape=box]; [fillcolor = 'blue', style = filled];
+ come [shape=box]; [fillcolor = 'blue', style = filled];
+ card [shape=box]; [fillcolor = 'yellow', style = filled];
+ care [shape=box]; [fillcolor = 'blue', style = filled];
+ plug [shape=box]; [fillcolor = 'white', style = filled];
+ pits [shape=box]; [fillcolor = 'orange', style = filled];
+ side [shape=box]; [fillcolor = 'yellow', style = filled];
+ plus [shape=box]; [fillcolor = 'white', style = filled];
+ pick [shape=box]; [fillcolor = 'orange', style = filled];
+ snap [shape=box]; [fillcolor = 'white', style = filled];
+ peak [shape=box]; [fillcolor = 'blue', style = filled];
+ feed [shape=box]; [fillcolor = 'blue', style = filled];
+ pose [shape=box]; [fillcolor = 'orange', style = filled];
+ feel [shape=box]; [fillcolor = 'blue', style = filled];
+ pays [shape=box]; [fillcolor = 'yellow', style = filled];
+ pork [shape=box]; [fillcolor = 'yellow', style = filled];
+ feet [shape=box]; [fillcolor = 'blue', style = filled];
+ fits [shape=box]; [fillcolor = 'orange', style = filled];
+ pole [shape=box]; [fillcolor = 'green', style = filled];
+ fast [shape=box]; [fillcolor = 'orange', style = filled];
+ fees [shape=box]; [fillcolor = 'blue', style = filled];
+ poll [shape=box]; [fillcolor = 'green', style = filled];
+ size [shape=box]; [fillcolor = 'yellow', style = filled];
+ city [shape=box]; [fillcolor = 'white', style = filled];
+ from [shape=box]; [fillcolor = 'blue', style = filled];
+ puts [shape=box]; [fillcolor = 'yellow', style = filled];
+ seat [shape=box]; [fillcolor = 'yellow', style = filled];
+ cent [shape=box]; [fillcolor = 'white', style = filled];
+ sank [shape=box]; [fillcolor = 'yellow', style = filled];
+ call [shape=box]; [fillcolor = 'orange', style = filled];
+ calm [shape=box]; [fillcolor = 'white', style = filled];
+ suit [shape=box]; [fillcolor = 'blue', style = filled];
+ cite [shape=box]; [fillcolor = 'yellow', style = filled];
+ firm [shape=box]; [fillcolor = 'blue', style = filled];
+ flat [shape=box]; [fillcolor = 'white', style = filled];
+ slim [shape=box]; [fillcolor = 'yellow', style = filled];
+ form [shape=box]; [fillcolor = 'yellow', style = filled];
+ cope [shape=box]; [fillcolor = 'blue', style = filled];
+ fire [shape=box]; [fillcolor = 'blue', style = filled];
+ park [shape=box]; [fillcolor = 'orange', style = filled];
+ fund [shape=box]; [fillcolor = 'white', style = filled];
+ flag [shape=box]; [fillcolor = 'white', style = filled];
+ part [shape=box]; [fillcolor = 'blue', style = filled];
+ copy [shape=box]; [fillcolor = 'white', style = filled];
+ spin [shape=box]; [fillcolor = 'yellow', style = filled];
+ case [shape=box]; [fillcolor = 'blue', style = filled];
+ pull [shape=box]; [fillcolor = 'blue', style = filled];
+ cash [shape=box]; [fillcolor = 'yellow', style = filled];
+ pace [shape=box]; [fillcolor = 'blue', style = filled];
+ cure [shape=box]; [fillcolor = 'blue', style = filled];
+ pulp [shape=box]; [fillcolor = 'yellow', style = filled];
+ pack [shape=box]; [fillcolor = 'blue', style = filled];
+ sort [shape=box]; [fillcolor = 'yellow', style = filled];
+ slid [shape=box]; [fillcolor = 'orange', style = filled];
+ sees [shape=box]; [fillcolor = 'blue', style = filled];
+ slip [shape=box]; [fillcolor = 'blue', style = filled];
+ clip [shape=box]; [fillcolor = 'yellow', style = filled];
+ scan [shape=box]; [fillcolor = 'white', style = filled];
+ soil [shape=box]; [fillcolor = 'blue', style = filled];
+ chip [shape=box]; [fillcolor = 'yellow', style = filled];
+ seal [shape=box]; [fillcolor = 'yellow', style = filled];
+ site [shape=box]; [fillcolor = 'blue', style = filled];
+ seed [shape=box]; [fillcolor = 'blue', style = filled];
+ curb [shape=box]; [fillcolor = 'white', style = filled];
+ cans [shape=box]; [fillcolor = 'yellow', style = filled];
+ file [shape=box]; [fillcolor = 'blue', style = filled];
+ seen [shape=box]; [fillcolor = 'blue', style = filled];
+ seem [shape=box]; [fillcolor = 'blue', style = filled];
+ sits [shape=box]; [fillcolor = 'blue', style = filled];
+ seek [shape=box]; [fillcolor = 'blue', style = filled];
+ ship [shape=box]; [fillcolor = 'orange', style = filled];
+ film [shape=box]; [fillcolor = 'orange', style = filled];
+ fill [shape=box]; [fillcolor = 'blue', style = filled];
+ sell [shape=box]; [fillcolor = 'orange', style = filled];
+ snow [shape=box]; [fillcolor = 'yellow', style = filled];
+ same [shape=box]; [fillcolor = 'blue', style = filled];
+ club [shape=box]; [fillcolor = 'blue', style = filled];
+ pure [shape=box]; [fillcolor = 'yellow', style = filled];
+ poor [shape=box]; [fillcolor = 'white', style = filled];
+ pink [shape=box]; [fillcolor = 'white', style = filled];
+ play [shape=box]; [fillcolor = 'white', style = filled];
+ sure [shape=box]; [fillcolor = 'yellow', style = filled];
+ star [shape=box]; [fillcolor = 'white', style = filled];
+ sang [shape=box]; [fillcolor = 'blue', style = filled];
+ farm [shape=box]; [fillcolor = 'orange', style = filled];
+ sums [shape=box]; [fillcolor = 'blue', style = filled];
+ felt [shape=box]; [fillcolor = 'yellow', style = filled];
+ spot [shape=box]; [fillcolor = 'yellow', style = filled];
+ paid [shape=box]; [fillcolor = 'orange', style = filled];
+ stay [shape=box]; [fillcolor = 'white', style = filled];
+ fell [shape=box]; [fillcolor = 'blue', style = filled];
+ plan [shape=box]; [fillcolor = 'white', style = filled];
+ pair [shape=box]; [fillcolor = 'orange', style = filled];
+ such [shape=box]; [fillcolor = 'blue', style = filled];
+ pool [shape=box]; [fillcolor = 'green', style = filled];
+ camp [shape=box]; [fillcolor = 'white', style = filled];
+ flow [shape=box]; [fillcolor = 'yellow', style = filled];
+ sale [shape=box]; [fillcolor = 'blue', style = filled];
+ face [shape=box]; [fillcolor = 'blue', style = filled];
+ pipe [shape=box]; [fillcolor = 'white', style = filled];
+ coal [shape=box]; [fillcolor = 'white', style = filled];
+ came [shape=box]; [fillcolor = 'blue', style = filled];
+ sets [shape=box]; [fillcolor = 'yellow', style = filled];
+ push [shape=box]; [fillcolor = 'blue', style = filled];
+ salt [shape=box]; [fillcolor = 'white', style = filled];
+ fact [shape=box]; [fillcolor = 'orange', style = filled];
+shop -- stop
+shop -- show
+shop -- shot
+code -- come
+code -- cope
+code -- core
+shot -- slot
+shot -- spot
+shot -- shut
+shot -- show
+pope -- pose
+show -- slow
+show -- snow
+sage -- save
+sage -- same
+sage -- sale
+cook -- cool
+cuts -- puts
+font -- foot
+fine -- five
+fine -- fire
+find -- fund
+find -- fine
+slot -- spot
+slot -- slow
+slow -- snow
+flee -- free
+flee -- flew
+send -- sent
+fuel -- full
+sing -- song
+pill -- poll
+pill -- pull
+fool -- foot
+fool -- pool
+pact -- past
+pact -- part
+song -- sons
+food -- fool
+food -- foot
+safe -- save
+safe -- same
+safe -- sale
+safe -- sage
+flew -- flow
+figs -- fits
+fall -- full
+fall -- fill
+fall -- fell
+span -- spin
+fled -- flee
+fled -- flew
+cool -- fool
+cool -- pool
+cold -- sold
+sand -- send
+sand -- sank
+sand -- sang
+soft -- sort
+page -- pale
+page -- sage
+fare -- farm
+fare -- fate
+fare -- fire
+shed -- sued
+fair -- pair
+skin -- spin
+past -- post
+cost -- post
+pass -- past
+pass -- pays
+fail -- fair
+fail -- fall
+pain -- pair
+pale -- sale
+pale -- pole
+port -- sort
+port -- post
+said -- slid
+said -- sand
+cast -- cost
+cast -- past
+cast -- fast
+cell -- sell
+cell -- fell
+core -- cure
+core -- corn
+full -- pull
+plot -- slot
+sold -- sole
+sole -- some
+stem -- step
+step -- stop
+come -- some
+come -- cope
+come -- core
+card -- care
+card -- cars
+care -- cure
+care -- cars
+care -- case
+care -- fare
+care -- core
+plug -- plus
+pits -- sits
+pits -- puts
+side -- size
+side -- site
+pick -- pink
+pick -- sick
+snap -- swap
+feed -- fled
+feed -- seed
+feed -- feet
+feed -- feel
+feed -- fees
+pose -- post
+feel -- feet
+feel -- fell
+feel -- fuel
+feel -- fees
+pays -- says
+pork -- port
+feet -- felt
+fits -- sits
+fits -- pits
+pole -- pose
+pole -- poll
+pole -- pope
+pole -- sole
+fast -- past
+fees -- sees
+fees -- feet
+poll -- pool
+poll -- pull
+seat -- sent
+cent -- sent
+call -- fall
+call -- cell
+call -- calm
+cite -- site
+cite -- city
+firm -- form
+slim -- slip
+cope -- copy
+cope -- pope
+cope -- core
+fire -- firm
+fire -- five
+park -- pork
+park -- part
+flag -- flat
+part -- past
+part -- port
+case -- cash
+case -- cast
+pull -- pulp
+cash -- cast
+pace -- pale
+pace -- page
+pace -- pack
+pace -- pact
+cure -- sure
+cure -- pure
+pulp -- pump
+pack -- park
+pack -- pick
+pack -- pact
+slid -- slim
+slid -- slip
+sees -- sets
+clip -- slip
+scan -- span
+chip -- clip
+chip -- ship
+seal -- seat
+seal -- sell
+site -- size
+site -- sits
+seed -- sued
+seed -- shed
+seed -- sees
+seed -- seek
+seed -- seem
+seed -- send
+seed -- seen
+curb -- cure
+cans -- fans
+cans -- cars
+file -- film
+file -- five
+file -- fill
+file -- fine
+file -- fire
+seen -- sees
+seem -- sees
+seem -- stem
+seem -- seen
+seek -- sees
+seek -- seem
+seek -- seen
+ship -- shop
+ship -- slip
+film -- firm
+fill -- pill
+fill -- full
+fill -- film
+same -- some
+same -- save
+pure -- sure
+star -- stay
+sang -- song
+sang -- sing
+sang -- sank
+farm -- form
+farm -- firm
+paid -- said
+paid -- pain
+paid -- pair
+fell -- sell
+fell -- full
+fell -- felt
+fell -- fill
+plan -- play
+pool -- poor
+flow -- slow
+sale -- sole
+sale -- save
+sale -- same
+sale -- salt
+face -- fate
+face -- fare
+face -- pace
+face -- fact
+pipe -- pope
+coal -- cool
+came -- care
+came -- same
+came -- come
+came -- camp
+came -- case
+sets -- sits
+fact -- fast
+fact -- pact
+
+}

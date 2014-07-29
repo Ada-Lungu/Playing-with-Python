@@ -1,0 +1,117 @@
+graph {
+blind
+birth
+buses
+being
+bound
+backs
+bring
+books
+booth
+begun
+blank
+bones
+birds
+bunch
+burns
+based
+built
+basis
+bears
+broad
+began
+burst
+brief
+bench
+bases
+black
+board
+beams
+basic
+boats
+basin
+boost
+build
+badly
+begin
+bonds
+bonus
+bands
+brand
+break
+boxes
+blood
+broke
+buyer
+blast
+bread
+blame
+brown
+brain
+beach
+bytes
+batch
+below
+bombs
+banks
+bills
+blend
+blaze
+block
+brush
+
+blind[fillcolor = red]--blend[fillcolor = green][dir:forward]
+buses[fillcolor = red]--bases[fillcolor = green][dir:forward]
+being[fillcolor = red]--bring[fillcolor = green][dir:forward]
+backs[fillcolor = red]--banks[fillcolor = green][dir:forward]
+bring[fillcolor = red]--being[fillcolor = green][dir:forward]
+begun[fillcolor = red]--begin[fillcolor = green][dir:forward]
+begun[fillcolor = red]--began[fillcolor = green][dir:forward]
+blank[fillcolor = red]--black[fillcolor = green][dir:forward]
+bones[fillcolor = red]--boxes[fillcolor = green][dir:forward]
+bones[fillcolor = red]--bonus[fillcolor = green][dir:forward]
+bones[fillcolor = red]--bonds[fillcolor = green][dir:forward]
+bunch[fillcolor = red]--bench[fillcolor = green][dir:forward]
+based[fillcolor = red]--bases[fillcolor = green][dir:forward]
+built[fillcolor = red]--build[fillcolor = green][dir:forward]
+basis[fillcolor = red]--bases[fillcolor = green][dir:forward]
+basis[fillcolor = red]--basic[fillcolor = green][dir:forward]
+basis[fillcolor = red]--basin[fillcolor = green][dir:forward]
+bears[fillcolor = red]--beams[fillcolor = green][dir:forward]
+broad[fillcolor = red]--bread[fillcolor = green][dir:forward]
+began[fillcolor = red]--begun[fillcolor = green][dir:forward]
+began[fillcolor = red]--begin[fillcolor = green][dir:forward]
+bench[fillcolor = red]--beach[fillcolor = green][dir:forward]
+bench[fillcolor = red]--bunch[fillcolor = green][dir:forward]
+bases[fillcolor = red]--basis[fillcolor = green][dir:forward]
+bases[fillcolor = red]--buses[fillcolor = green][dir:forward]
+bases[fillcolor = red]--based[fillcolor = green][dir:forward]
+black[fillcolor = red]--block[fillcolor = green][dir:forward]
+black[fillcolor = red]--blank[fillcolor = green][dir:forward]
+beams[fillcolor = red]--bears[fillcolor = green][dir:forward]
+basic[fillcolor = red]--basis[fillcolor = green][dir:forward]
+basic[fillcolor = red]--basin[fillcolor = green][dir:forward]
+basin[fillcolor = red]--basis[fillcolor = green][dir:forward]
+basin[fillcolor = red]--basic[fillcolor = green][dir:forward]
+build[fillcolor = red]--built[fillcolor = green][dir:forward]
+begin[fillcolor = red]--begun[fillcolor = green][dir:forward]
+begin[fillcolor = red]--began[fillcolor = green][dir:forward]
+bonds[fillcolor = red]--bands[fillcolor = green][dir:forward]
+bonds[fillcolor = red]--bones[fillcolor = green][dir:forward]
+bonds[fillcolor = red]--bonus[fillcolor = green][dir:forward]
+bonus[fillcolor = red]--bones[fillcolor = green][dir:forward]
+bonus[fillcolor = red]--bonds[fillcolor = green][dir:forward]
+bands[fillcolor = red]--banks[fillcolor = green][dir:forward]
+bands[fillcolor = red]--bonds[fillcolor = green][dir:forward]
+break[fillcolor = red]--bread[fillcolor = green][dir:forward]
+boxes[fillcolor = red]--bones[fillcolor = green][dir:forward]
+bread[fillcolor = red]--broad[fillcolor = green][dir:forward]
+bread[fillcolor = red]--break[fillcolor = green][dir:forward]
+blame[fillcolor = red]--blaze[fillcolor = green][dir:forward]
+beach[fillcolor = red]--bench[fillcolor = green][dir:forward]
+banks[fillcolor = red]--bands[fillcolor = green][dir:forward]
+banks[fillcolor = red]--backs[fillcolor = green][dir:forward]
+blend[fillcolor = red]--blind[fillcolor = green][dir:forward]
+blaze[fillcolor = red]--blame[fillcolor = green][dir:forward]
+block[fillcolor = red]--black[fillcolor = green][dir:forward]
+}
