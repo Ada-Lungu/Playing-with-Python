@@ -31,7 +31,6 @@ print b.vertices
 
 
 
-
 #2nd approach: take four-letter words from the file - create 4 buckets with
 # combination of missing words, then when next 4 lettered word compare with
 # the existing buckets, if not, create for it other 4
@@ -265,9 +264,7 @@ fool_sage_graph.print_path_from_vertex1_to_vertex2(from_vertex_input, to_vertex_
 #(fool_sage_graph.get_vertex("fool"), fool_sage_graph.get_vertex("sage"))
 
 fool_sage_graph.save_dot_to_file("fool-sage-path.dot",
-                                 fool_sage_graph.get_path_from_verte
-
-x1_to_vertex2(from_vertex_input, to_vertex_input),
+                                 fool_sage_graph.get_path_from_vertex1_to_vertex2(from_vertex_input, to_vertex_input),
                                  ask_input_color_shortest_path())
 
 
