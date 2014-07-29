@@ -1,12 +1,8 @@
 __author__ = 'ada'
 
-<<<<<<< HEAD:Algorithms/Graphs/BucketsWordLadderReimplement.py
-from algorithms.Graphs.GraphImplementation import Graph
+from GraphImplementation import Graph
 from Pythonds.basic import queue
-=======
-from Graph_Implementation import Vertex, Graph
-from pythonds.basic import Queue
->>>>>>> FETCH_HEAD:Buckets-Word-Ladder-Reimplement.py
+
 
 # read the file and take the four-lettered words
 
@@ -75,11 +71,8 @@ def create_paths_from_start_vertex (a_graph, start_vertex): # ???? a_graph
 # we first set these values of the start vertex
     start_vertex.set_distance(0)
     start_vertex.set_color("grey")
-<<<<<<< HEAD:Algorithms/Graphs/BucketsWordLadderReimplement.py
+
     will_be_visited_vertexes = queue()
-=======
-    will_be_visited_vertexes = Queue()
->>>>>>> FETCH_HEAD:Buckets-Word-Ladder-Reimplement.py
     will_be_visited_vertexes.enqueue(start_vertex)
 
     while will_be_visited_vertexes.size() > 0:
@@ -91,25 +84,6 @@ def create_paths_from_start_vertex (a_graph, start_vertex): # ???? a_graph
                 neighbour_vertex.set_distance(curr_vertex.get_distance() + 1)
                 will_be_visited_vertexes.enqueue(neighbour_vertex)
         curr_vertex.set_color("black")
-
-# print the path from one vertex to another
-def get_path_from_vertex1_to_vertex2(vertex1, vertex 2):
-
-    print vertex2
-    print vertex2.get_pred()
-    vertex2_pred =
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
