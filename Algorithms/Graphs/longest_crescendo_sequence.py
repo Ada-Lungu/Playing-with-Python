@@ -1,7 +1,7 @@
 __author__ = 'ada'
 
 
-def longest_crescendo_seq1(index = 0, num_list):
+"""def longest_crescendo_seq1(index = 0, num_list):
 
     sequence_list = []
     seq_counter = 0
@@ -16,7 +16,7 @@ def longest_crescendo_seq1(index = 0, num_list):
             seq_counter += 1
             sequence_list.append(next_num)
             longest_crescendo_seq(index+1, num_list)
-        counter_to_sequence_list[seq_counter] = sequence_list
+        counter_to_sequence_list[seq_counter] = sequence_list"""
 
 
 
@@ -26,21 +26,24 @@ def longest_crescendo_seq(num_list):
 
     longest_crescendo_seq = []
     sequence_list = []
-    rest_of_num_list = (len(num_list) - len(sequence_list))
 
+    for index in range(len(num_list)-1): # 13
+        rest_of_num_list = (len(num_list) - len(sequence_list))
+        if len(longest_crescendo_seq) > rest_of_num_list:
+            return longest_crescendo_seq
 
-    while (len(longest_crescendo_seq) < len(rest_of num_list)):
-        for index in range(len(num_list)): # 13
-            if num_list[index] < num_list[index+1]: #0 < 1
-                sequence_list.append(num_list[index])   #seq_list [2,4,5,7,]
-            elif len(longest_crescendo_seq) < len(sequence_list):
-                sequence_list.append(num_list[index])
-                longest_crescendo_seq = sequence_list  #long =
+        if num_list[index] < num_list[index+1]: #0 < 1
+            sequence_list.append(num_list[index])   #seq_list [2,4,5,7,]
+        elif len(longest_crescendo_seq) < len(sequence_list):
+            sequence_list.append(num_list[index])
+            longest_crescendo_seq = sequence_list[:] #long =
+            sequence_list = []
 
     return longest_crescendo_seq
 
 
-longest_crescendo_seq([2,4,5,7,1,3,5,6,8,9,10,4,2,1])
+print longest_crescendo_seq([2,4,5,7,1,3,5,6,8,9,10,4,2,1])
+
 
 
 

@@ -1,6 +1,6 @@
 
 from Algorithms.Graphs.GraphImplementation import Vertex, Graph
-from Pythonds.basic import stack
+from Pythonds.basic.stack import Stack
 
 def ask_input_board_size():
     no_rows_columns = input("How many squares on rows/columns does the board have?")
@@ -97,57 +97,46 @@ def knight_tour(curr_node_square, no_rows_columns, path_of_visited_node_squares 
 
 
 # DFS without Recursion
-def knight_tour_with_stack(no_rows_columns, knight_graph):
+def knight_tour_with_stack(knight_graph, board_size):
     dfs_stack = Stack() # nu importa modulul Stack
     path_visited_nodes = []
 
-    start_vertex = knight_graph.get_vertex((0,0))
-    path_visited_nodes.append(start_vertex)
 
-    while size(dfs_stack) > 0:
-        dfs_stack.push(current_node.get_neighbour_vertices())
-        path_visited_nodes.append(current_node)
+    start_vertex = knight_graph.get_vertex((0,0))
+    partial_sol_stack = Stack()
+    dfs_stack.push(start_vertex)
+    path_visited_nodes.append(start_vertex)
+    start_vertex.set_color("grey")
+
+    while dfs_stack.size() > 0:
         current_node = dfs_stack.pop()
+        if len(path_visited_nodes) == board_size*board_size:
+            return path_visited_nodes
+
+        path_visited_nodes.append(current_node)
+        partial_sol_stack.push(path_visited_nodes)
+
+
+        at_least_one_white_child = False
+        for neighbour in current_node.get_neighbour_vertices():
+            if neighbour.get_color() == "white":
+                dfs_stack.push(neighbour)
+                at_least_one_white_child = True
+
+
+        if not at_least_one_white_child:
+            path_visited_nodes = partial_sol_stack.pop()
+        current_node.set_color("grey")
 
     return path_visited_nodes
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 board_size = ask_input_board_size()
 build_knight_graph(board_size)
 #print knight_tour((build_knight_graph(board_size)).get_vertex((0,0)), board_size, [])
-knight_tour_with_stack((build_knight_graph(board_size)).get_vertex((0,0)), board_size)
+
+print knight_tour_with_stack((build_knight_graph(board_size))
 
 
 
