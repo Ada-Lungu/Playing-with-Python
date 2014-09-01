@@ -1,0 +1,138 @@
+
+def quick_sort(list, left_margin, right_margin):
+    pivot_position = left_margin+(right_margin-left_margin)//2
+    pivot = list[pivot_position]
+
+    if left_margin < right_margin:
+        for elem_position in range(left_margin, pivot_position):
+            if list[elem_position] > pivot:
+                list.insert(pivot_position+1,list[elem_position])
+                del(list[elem_position])
+                pivot_position -= 1
+
+        for elem_position in range(pivot_position+1, right_margin+1):
+            if list[elem_position] < pivot:
+                list.insert(pivot_position, list[elem_position])
+                del(list[elem_position+1])
+                pivot_position += 1
+
+        quick_sort(list, left_margin, pivot_position-1)
+        quick_sort(list, pivot_position+1, right_margin)
+
+    return list
+
+print quick_sort([2, 4, 7, 6, 0, 10, 19], 0, 6)
+
+
+
+# the most basic bubble sort
+def bubble_sort(list):
+
+    sorted = False
+
+    while not sorted:
+        sorted = True
+        for elem_position in range(0, len(list)-1):
+            if list[elem_position] > list[elem_position+1]:
+                list[elem_position], list[elem_position+1] = list[elem_position+1], list[elem_position]
+                sorted = False
+
+    return list
+
+
+print bubble_sort([2, 4, 7, 6, 0, 10, 19])
+
+
+# the basic bubble sort optimized - not working!!
+
+"""def bubble_sort_optimized_shorten_list(list):
+
+    sorted = False
+
+    while not sorted and len(list) > 1:
+        sorted = True
+        for elem_position in range(0, len(list)-1):
+            if list[elem_position] > list[elem_position+1]:
+                list[elem_position], list[elem_position+1] = list[elem_position+1], list[elem_position]
+                sorted = False
+        len(list) -= 1
+
+    return list
+
+print bubble_sort_optimized_shorten_list([2, 4, 7, 6, 0, 10, 19])"""
+
+
+# the bubble_sort optimized reversely: rabbits from turtles
+
+def bubble_sort_optimized_reversed(list):
+#     right margin/ left margin
+    right_margin = len(list)
+    left_margin = 0
+    sorted = False
+
+    while not sorted: # sorted = False
+        sorted = True
+        for elem_position in range(left_margin,right_margin-1):
+            if list[elem_position] > list[elem_position+1]:
+                list[elem_position], list[elem_position+1] = list[elem_position+1], list[elem_position]
+                sorted = False
+        right_margin -= 1
+
+        for elem_position in range(right_margin-1, left_margin-1, -1):
+            if list[elem_position] > list[elem_position+1]:
+                list[elem_position], list[elem_position+1] = list[elem_position+1], list[elem_position]
+                sorted = False
+        left_margin += 1
+
+    return list
+
+print bubble_sort_optimized_reversed([2, 4, 7, 6, 0, 10, 19])
+
+
+
+def quick_sort_2(list, left_margin, right_margin):
+    pivot_position = left_margin + (right_margin - left_margin)//2
+    pivot = list[pivot_position]
+
+    if right_margin > left_margin:
+        for elem_pos in range(left_margin, pivot_position):
+            if list[elem_pos] > pivot:
+                list.insert(pivot_position+1, list[elem_pos])
+                del(list[elem_pos])
+                pivot_position -= 1
+
+        for elem_pos in range(pivot_position+1,right_margin+1):
+            if list[elem_pos] < pivot:
+                list.insert(pivot_position, list[elem_pos])
+                del(list[elem_pos])
+                pivot_position += 1
+
+    quick_sort(list, left_margin, pivot_position-1)
+    quick_sort(list, pivot_position+1, right_margin)
+
+    return list
+
+print quick_sort_2([2, 4, 7, 6, 0, 10, 19], 0, 6)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
