@@ -21,6 +21,7 @@ def merge_sort(left_array, right_array):
 
     return sorted_array
 
+print merge_sort([0,4,8,9], [2,5,7,1])
 
 def split_and_merge(array):
     middle_index = len(array)//2

@@ -62,7 +62,7 @@ def is_legal_coord(knight_pos, no_rows_colums):
     return False
 
 
-# using DFS and Recursion
+# using DFS Recursively with Backtracking
 def knight_tour(curr_node_square, no_rows_columns, path_of_visited_node_squares = []):
 # this function gives us the path = sequence of moves by the knight so that
 # it visits all the squares on the board only once

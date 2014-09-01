@@ -28,7 +28,7 @@ def bubble_sort2(my_list):
 def bubble_sort3(my_list):  #[2, 3, 5, 1, 8]
     count = 0
     #while count < len(my_list):
-    for i in range(0,len(my_list)):
+    for i in range(0,len(my_list)-1):
         for j in range(i+1, len(my_list)):
             if my_list[i] > my_list[j]:
                 """a, b = my_list.index(my_list[i]), my_list.index(my_list[j]) # indexul elementelor mele de comparat

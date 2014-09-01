@@ -1,7 +1,8 @@
 __author__ = 'mircea'
+
 import MySQLdb
 
-db = MySQLdb.connect(host="haddock.unibe.ch", # your host, usually localhost
+db = MySQLdb.connect(host="127.0.0.1", # your host, usually localhost
                      user="zeeguu", # your username
                       passwd="sla2012", # your password
                       db="zeeguu") # name of the data base
@@ -11,8 +12,11 @@ db = MySQLdb.connect(host="haddock.unibe.ch", # your host, usually localhost
 cur = db.cursor()
 
 # Use all the SQL you like
-cur.execute("SELECT * FROM Users")
+cur.execute("SELECT * FROM User")
 
 # print all the first cell of all the rows
 for row in cur.fetchall() :
-    print row[0]
+    print row[1]
+
+
+
