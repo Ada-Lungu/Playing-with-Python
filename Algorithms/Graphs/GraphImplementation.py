@@ -145,6 +145,12 @@ class Vertex:
     def get_distance(self):
         return self.distance
 
+    def was_visited(self):
+        return True
+
+    def was_not_visited(self):
+        return False
+
 # it is used for print ==> transforms into a string for printing
     def __str__(self):
         return "vertex: " + str(self.id) + "(" + str(len(self.neighbour_to_weight)) + ")"

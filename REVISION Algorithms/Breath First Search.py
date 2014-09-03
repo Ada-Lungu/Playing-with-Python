@@ -59,8 +59,6 @@ def get_path_from_to_recursively(from_vertex, to_vertex, path_from_to_vertex):
     return the_real_recursive(from_vertex,to_vertex, path_from_to_vertex)
 
 
-
-
 print get_path_from_vertex_to_vertex(g.get_vertex("Arad"), g.get_vertex("Cluj-Napoca"))
 print get_path_from_to_recursively(g.get_vertex("Arad"), g.get_vertex("Cluj-Napoca"), [])
 
@@ -75,37 +73,34 @@ def bfs2(start_vertex):
 
     # is_visited/set_is_visited method looks if the vertex was in the vertices_next_be_visited
 
-
-    was_visited = False
+    start_vertex.was_not_visited()
     start_vertex.set_pred(None)
     start_vertex.set_dist(0)
     vertices_next_be_visited = Queue()
     vertices_next_be_visited.enqueue(start_vertex)
-    #start_vertex.set_is_visited(True)
+    start_vertex.was_visited()
 
-    while vertices_next_be_visited.size() > 0 and not was_visited:
+    while vertices_next_be_visited.size() > 0:
         current_node = vertices_next_be_visited.dequeue()
-        was_visited = True
+        current_node.was_visited()
         for nbr in current_node.get_neighbours():
-
-                is_visited = True
+            if nbr.was_not_visited():
                 nbr.set_pred(current_node)
                 nbr.set_dist(current_node.get_dist() + 1)
                 vertices_next_be_visited.enqueue(nbr) # indentation, could be here or ne more left ??? - no, then it will put it anyways, not white
 
 
-def get_path_from_to_vertex(from_v, to_v):
-    bfs2(from_v)
-    path_from_to_vertex = [from_v]
-    current_v = from_v
+def get_path_from_vertex_to_vertex2(from_vertex, to_vertex):
+    bfs1(from_vertex)
+    path_from_vertex_to_vertex = []
 
-    while current_v.get_pred() != to_v:
-        current_v = current_v.get_pred()
-        path_from_to_vertex.append(current_v)
-    path_from_to_vertex.append(to_v)
+    while to_vertex.get_pred() != from_vertex: # .id  ??
+        path_from_vertex_to_vertex.append(to_vertex)
+        to_vertex = to_vertex.get_pred()
+    path_from_vertex_to_vertex.append(to_vertex)
+    path_from_vertex_to_vertex.append(from_vertex)
 
-    return path_from_to_vertex
-
+    return path_from_vertex_to_vertex
 
 
 
@@ -144,6 +139,8 @@ def get_path_from_vertex_to_vertex3(from_vertex, to_vertex):
     return path_from_vertex_to_vertex
 
 print get_path_from_vertex_to_vertex3(g.get_vertex("Arad"), g.get_vertex("Cluj-Napoca"))
+print get_path_from_vertex_to_vertex2(g.get_vertex("Arad"), g.get_vertex("Cluj-Napoca"))
+
 
 
 

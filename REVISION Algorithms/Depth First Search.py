@@ -1,6 +1,6 @@
 __author__ = 'ada'
 
-from Pythonds.basic.stack import Stack
+from Pythonds.basic.stack import
 
 # exploring the graph from a start_vertex
 def dfs(start_vertex):
@@ -20,8 +20,38 @@ def dfs(start_vertex):
                     if neighbour.get_neighbours() == 0:
                         visited_nodes.pop()
 
-def dfs(start_vertex, path_of_visited_nodes):
-    
+
+# dfs recursively + backtracking
+def dfs(start_vertex,):
+
+    visited_nodes = Stack()
+    start_vertex.no_more_nbr_to_explore() == False
+    visited_nodes.push(start_vertex)
+    current_node = visited_nodes.pop()
+
+    if visited_nodes.size() == 0:
+        return visited_nodes
+
+        if current_node.no_more_nbr_to_explore() == True:
+            visited_nodes.pop()
+            current_node = visited_nodes.pop()
+        else:
+            for nbr in current_node.get_neighbours_vertices():
+                visited_nodes.push(nbr)
+                current_node = nbr
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
