@@ -65,8 +65,6 @@ print get_path_from_to_recursively(g.get_vertex("Arad"), g.get_vertex("Cluj-Napo
 
 
 
-
-
 # try again without colours
 
 def bfs2(start_vertex):

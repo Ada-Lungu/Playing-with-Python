@@ -1,12 +1,14 @@
+
 def fibonacci(num):
 
-	if num == 0 or num == 1:
+    if num == 0 or num == 1:
 		return num
 	else:
 		return fibonacci(num-1) + fibonacci(num-2)
 
 
 dicty = {0:0 , 1:1 }
+
 def fibonacci_with_hints(num):
 
 	if dicty.has_key(num):

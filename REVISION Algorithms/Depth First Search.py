@@ -1,6 +1,6 @@
 __author__ = 'ada'
 
-from Pythonds.basic.stack import
+from Pythonds.basic.stack import Stack
 
 # exploring the graph from a start_vertex
 def dfs(start_vertex):

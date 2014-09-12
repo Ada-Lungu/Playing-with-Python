@@ -19,7 +19,6 @@ __author__ = 'ada'
         counter_to_sequence_list[seq_counter] = sequence_list"""
 
 
-
  # [2,4,5,7,1,3,5,6,8,9,10,4,2,1]
 
 def longest_crescendo_seq(num_list):

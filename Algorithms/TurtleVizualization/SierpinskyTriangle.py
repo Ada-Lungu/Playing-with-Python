@@ -15,18 +15,6 @@ class Triangle:
         self.b = b
         self.c = c
 
-"""def draw_triangle(points, color, my_turtle):
-
-    my_turtle.fillcolor(color)
-    my_turtle.up()
-    my_turtle.goto(points[2].x,points[2].y)
-    my_turtle.begin_fill()
-    my_turtle.down()
-    my_turtle.goto(points[0].x,points[0].y)
-    my_turtle.goto(points[1].x,points[1].y)
-    my_turtle.goto(points[2].x,points[2].y)
-    my_turtle.end_fill()"""
-
 def draw_triangle(triangle, color, my_turtle):
 
     my_turtle.fillcolor(color)

@@ -7,11 +7,11 @@
     freq_list.middle = len(freq_list)//2"""
 
 
-    def __init__(self, left, right, middle):
+def __init__(self, left, right, middle):
 
-        self.left = left # left is an attribute to object BS
-        self.right = right
-        freq_list.middle = len(freq_list)//2
+    self.left = left # left is an attribute to object BS
+    self.right = right
+    freq_list.middle = len(freq_list)//2
 
 def binary_search(freq_list, the_word):
 

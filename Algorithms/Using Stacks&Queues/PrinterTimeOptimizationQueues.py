@@ -60,8 +60,6 @@ def simulation(time_completion_tasks, ppm):
             task = Task(currentTime)
             printQueue.enqueue(task)
 
-
-
     def newPrintTask():
         num = random.randrange(1,181)
         if num == 180:

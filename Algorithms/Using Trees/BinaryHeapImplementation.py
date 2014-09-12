@@ -72,7 +72,7 @@ def delete_min(self):
     self.heap_list.pop()
     self.perc_down(1)
     #return self.heap_list
-    return min_elem # ????????????? why not returning the list?
+    return min_elem # ??why not returning the list?
 
 
 

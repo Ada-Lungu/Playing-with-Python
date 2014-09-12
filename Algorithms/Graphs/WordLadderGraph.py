@@ -43,7 +43,6 @@ def build_word_graph():
 
 
 
-
 words = ["root", "loot"]
 
 
@@ -51,9 +50,7 @@ g = build_word_graph()
 assert(len(g.get_vertices()) > 0)
 print "number of vertices in the graph: " + str(len(g.get_vertices()))
 
-
 # assert (len(g.get_vertex("amir").get_connections()) > 0)
-
 
 def most_connected_vertex(g):
     max_connections = 0

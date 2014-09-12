@@ -1,7 +1,6 @@
 __author__ = 'ada'
 
-from Graph_Implementation import Vertex, Graph
-from algorithms.pythonds.basic import Queue
+from Algorithms.Graphs.Graph_Implementation import Vertex, Graph
 
 # a Bucket is nothing else than... a list of vertices. with a name.
 class VerticesWithSamePattern():
@@ -99,7 +98,7 @@ def words_with_given_length_and_starting_letters(number_letters, starting_letter
     #  /Users
     #  /bin
 
-    file = open("wordlists/en.txt","r")
+    file = open("Wordlists/en.txt","r")
     for each_line in file:
         word = each_line[:-1]
         if len(word) == int(number_letters) and word[0] in starting_letters_list:
@@ -114,7 +113,7 @@ def words_with_given_length_and_starting_letters_test(number_letters, starting_l
     #  /Users
     #  /bin
 
-#   file = open("wordlists/en.txt","r")
+#   file = open("Wordlists/en.txt","r")
 #   for each_line in file:
 #        word = each_line[:-1]
     list_words = ["fool", "sage", "pool", "cool", "soul", "swings", "creepy", "chil"]

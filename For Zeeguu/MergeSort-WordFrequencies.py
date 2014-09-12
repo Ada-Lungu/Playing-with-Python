@@ -53,7 +53,6 @@ def split_and_merge_list(my_list):
 w2 = WordFrequency('le', 2)
 w3 = WordFrequency('pour', 3)
 w4 = WordFrequency('jour', 4)
-
 lista_cuvinte = [w1, w2, w3, w4]"""
 
 

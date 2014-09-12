@@ -20,16 +20,6 @@ english_difficulties ['art'] = 20"""
     # return the total value
 
 
-"""for each_word in words_text:
-        if each_word in word_difficulties:
-            sum_difficulties += word_difficulties[each_word]
-
-for each_word in text:
-        if each_word in word_difficulties.keys():
-            sum_difficulties += word_difficulties[each_word]"""
-
-
-
 def compute_difficulty(text, word_difficulties):
     import re
     sum_difficulties = 0
@@ -52,7 +42,6 @@ print compute_difficulty(text, word_difficulties)
 
 # Examples that should not throw assertion failures when the function 
 # is implemented
-"""assert (compute_difficulty("Oh Romeo, Romeo! wherefore art thou Romeo?",
-	english_difficulties) == 53)
-
-assert (compute_difficulty("Oh, oh, oh!", english_difficulties) == 1)"""
+# assert (compute_difficulty("Oh Romeo, Romeo! wherefore art thou Romeo?"
+# english_difficulties) == 53)
+#assert (compute_difficulty("Oh, oh, oh!", english_difficulties) == 1)

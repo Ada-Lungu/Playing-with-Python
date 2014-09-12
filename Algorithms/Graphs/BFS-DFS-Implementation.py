@@ -2,12 +2,10 @@ __author__ = 'ada'
 
 # BFS: we use: color, distance, predecessor - as methods of Vertex class
 # we use a Queue, where we deposit the nodes that will be visited
-# we need a current_node as a valuable variable
-
-# the idea of predecessor, each node (except first) will have one predecessor,
+# we need a current_node and predecessor, each node (except first) will have one predecessor,
 # each will be predecessor for others except the last children
 
-from GraphImplementation import Vertex, Graph
+from GraphImplementation import Vertex
 from Pythonds.basic.queue import Queue, Stack
 
 def bfs(current_node):
@@ -41,6 +39,8 @@ def get_path_from_vertex1_to_vertex2(the_graph, vertex1, vertex2):
 
     bfs(vertex1, the_graph)
     path_from_vertex2_to_vertex1 = []
+
+    vertex2 = Vertex()
 
     vertex2 = x
     while x.get_pred() != vertex1:

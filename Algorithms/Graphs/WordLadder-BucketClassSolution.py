@@ -54,14 +54,14 @@ def build_word_graph_bucket(words):
     for word_vertex in word_graph.get_vertices():
         for each_letter in range(len(word_vertex.id)): # {r_ot: "root, raut,"  _oot: poot, root}
             bucket_name = word_vertex.id[:each_letter] + "_" + word_vertex.id[(each_letter+1):]
-            #
+
             # if the bucket exists
             if bucket_name in buckets_dict:
                 # buckets_dict[bucket_name].append(word_vertex)
                 buckets_dict[bucket_name].add_vertex(word_vertex)
             else:
             # if the bucket does not exist in dict
-            #     sol. 1
+                # sol. 1
                 # buckets_dict[bucket_name] = [word_vertex]
                 # sol. 2
                 buckets_dict[bucket_name] = VerticesWithSamePattern(bucket_name, [word_vertex])
@@ -100,7 +100,7 @@ def words_with_given_length_and_starting_letters(number_letters, starting_letter
 
     import os
     print os.getcwd()
-    file = open("../../wordlists/en.txt","r")
+    file = open("../../Wordlists/en.txt","r")
     for each_line in file:
         word = each_line[:-1]
         if len(word) == int(number_letters) and word[0] in starting_letters_list:
@@ -115,7 +115,7 @@ def words_with_given_length_and_starting_letters_test(number_letters, starting_l
     #  /Users
     #  /bin
 
-#   file = open("wordlists/en.txt","r")
+#   file = open("Wordlists/en.txt","r")
 #   for each_line in file:
 #        word = each_line[:-1]
     list_words = ["fool", "sage", "pool", "cool", "soul", "swings", "creepy", "chil"]
@@ -148,48 +148,10 @@ def ask_input_words_infos():
 # convert string to integer => daca se poate converti, trebuie sa fie "3", "4", "5"
 
 
-
-"""# breadth first search
-def create_paths_from_start_vertex(start_vertex):
-# each vertex will have as instant values: distance, predecessor, colour => they all have the "set" and "get" methods
-# we first set these values of the start vertex
-    start_vertex.set_distance(0)
-    start_vertex.set_color("grey")
-    will_be_visited_vertexes = Queue()
-    will_be_visited_vertexes.enqueue(start_vertex)
-
-    while will_be_visited_vertexes.size() > 0:
-        curr_vertex = will_be_visited_vertexes.dequeue()
-        for neighbour_vertex in curr_vertex.get_neighbours_vertices():
-            if neighbour_vertex.get_color() == "white":
-                neighbour_vertex.set_color("grey")
-                neighbour_vertex.set_pred(curr_vertex)
-                neighbour_vertex.set_distance(curr_vertex.get_distance() + 1)
-                will_be_visited_vertexes.enqueue(neighbour_vertex)
-        curr_vertex.set_color("black")
-
-
-# the path from one vertex to another
-def get_path_from_vertex1_to_vertex2(vertex1, vertex2):
-    create_paths_from_start_vertex(vertex1)
-    get_path_list_vertices = []
-    x = vertex2
-    while x != vertex1:
-        get_path_list_vertices.append(x)
-        x = x.get_pred()
-    get_path_list_vertices.append(x)
-    return get_path_list_vertices"""
-
-
 def request_input_from_to_what_vertex(g, message_for_the_user):
     vertex_name = raw_input(message_for_the_user)
     print vertex_name
     return g.get_vertex(vertex_name)
-
-
-"""def print_path_from_vertex1_to_vertex2(vertex1, vertex2):
-    for vertex_visited in get_path_from_vertex1_to_vertex2(vertex1, vertex2):
-        print vertex_visited.id"""
 
 
 def print_and_recurse(v2, v1):

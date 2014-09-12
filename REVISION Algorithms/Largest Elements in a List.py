@@ -13,7 +13,6 @@ print largest(3,[2,4,6,7,9,4,0,1])
 # list[start: stop: step] => [-3:]
 
 
-
 # sorting the list with a sorting algorithm: quick sort
 def largest_from_the_scractch(n,xs):
   """Find the n highest elements in a list"""

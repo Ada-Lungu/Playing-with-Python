@@ -6,19 +6,6 @@ __author__ = 'ada'
 
 #balanced = if at the end the stack is empty
 
-"""def is_paranthesis_balance_try1(paranthesis_string):
-
-    is_balanced = True
-    open_paranth_stack = Stack()
-    for each_symbol in paranthesis_string:
-        if each_symbol == "(":
-            open_paranth_stack.push(each_symbol)
-        else:
-            while not open_paranth_stack.isEmpty():
-                open_paranth_stack.pop()
-            if open_paranth_stack.isEmpty:
-                is_balanced = False"""
-
 
 from Pythonds.basic.stack import stack
 def is_paranthesis_balance(paranthesis_string):

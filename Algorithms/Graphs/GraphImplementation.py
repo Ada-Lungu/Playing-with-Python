@@ -19,7 +19,7 @@ class Vertex:
 
 # methods: add_neighbour, get_connections, get_ID, get_weight
 
-# insert in the dictionary the new neighbour vertex and the weight corresponding {neighr:weight}
+# insert in the dictionary the new neighbour vertex and the weight corresponding {neighbour:weight}
     def add_neighbour(self, neighbour, weight = 0):
         self.neighbour_to_weight[neighbour] = weight
 
@@ -62,7 +62,7 @@ class Vertex:
         return False
 
     def shortest_path1(self, to_vertex):
-        # if vertex is neighbour/one-way distance then ...
+        # if vertex is neighbour/one-way distance
         min_dist = 100000
         # think about heap
         if to_vertex in self.neighbour_to_weight:
@@ -87,7 +87,7 @@ class Vertex:
                 for n in self.neighbour_to_weight:
                     # search through the visited_neighbours =>
                     if n not in visited_neighbours:
-                        short_path = self.get_weight(n) + n.shortest_path(to_vertex, []) # ?????  why not visited_neighbours instead of []
+                        short_path = self.get_weight(n) + n.shortest_path(to_vertex, []) # ?why not visited_neighbours instead of []
                         if short_path < minimum_distance:
                             minimum_distance = short_path
                 return minimum_distance
@@ -193,7 +193,7 @@ class Graph:
                 all_edges.append(vertex_and_neighbour) # append to all_edges the edges of each vertex through the get_edges vertex method
         return all_edges
 
-    # print with only one edge between nodes => folosim o conditie care sa restrictioneze repetitia de same edge between same nodes/same pair of nodes - (vertex, neighbour) (neighbour,vertex)
+    # print with only one edge between nodes => folosim o conditie care sa restrictioneze repetitia de same edge between same nodes/same pair of nodes - (vertex, neighbour)/(neighbour,vertex)
     def edges_as_dot_string(self):
         result = ""
         for vertex in self.vertices.values():
@@ -262,7 +262,7 @@ class Graph:
                     2: 'yellow',
                     3: 'orange',
                 }.get(each_vertex.get_neighbours_number(), 'blue') # dict.get(key, default value) => returns the value of the key,
-                # if the key is nt in the dict returns None/or the default value given
+                # if the key is not in the dict returns None/or the default value given
                 # dict.get(key) => value, just as dict[key] - the difference is that the this one returns Error if the key given is not in dict
 
             result_list.append(" "'%s'" [shape=box]; [fillcolor = '%s', style = filled];" % (each_vertex.id, color))
@@ -306,7 +306,7 @@ class Graph:
     # for each new vertex visited we set for it: predecessor, dist
     # make use of set + get methods for distance/predecessor
 
-        to_be_visited_vertices = priorityqueue() # list of tuples (vertex1, value=distance)
+        to_be_visited_vertices = PriorityQueue() # list of tuples (vertex1, value=distance)
         starting_vertex.set_distance(0)
         starting_vertex.set_pred(None)
 

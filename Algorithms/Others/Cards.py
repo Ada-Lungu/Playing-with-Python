@@ -60,7 +60,7 @@ class Deck():
 
             # to remove the top card => remove the last element from the deck list - we use "pop" method, does just that
 
-    # pops if deck not empty. prints errr otherwise
+    # pops if deck not empty. prints error otherwise
 
     def remove_top_card(self):          # or: return self.deck.pop()
         if len(self.deck) != 0:

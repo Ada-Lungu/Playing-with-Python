@@ -78,7 +78,6 @@ def insertion_sort(unsorted_list):
                 unsorted_list.insert(second_position+1, unsorted_list[position])
 
 
-
 def bubble_sort_reversed_optim(list):
     right_margin = len(list)
     left_margin = 0
